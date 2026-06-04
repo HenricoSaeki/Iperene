@@ -45,6 +45,10 @@ margin-left: 2vw;
     font-size: 1vw;
 }
 
+ul {
+    list-style-type: none;
+}
+
 header {
     background-image: url("img/imgfundoheader.png");
     height: 100vh;
@@ -152,6 +156,9 @@ header {
   transition: 0.3s;
 }
 
+.logoiperene2:hover {
+cursor: pointer;
+}
 .logoiperene2:hover {
      filter: brightness(1.5);
     transition: 0.3s;
