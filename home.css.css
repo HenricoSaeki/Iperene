@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER COMEÇA AQUI*/
+body {
+    margin: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+  
+}
+.retanguloheader {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(253, 230, 29);
+  align-items: center;
+  display: flex;
+  
+  
+}
+
+.logoiperene1{
+  display: flex;
+  height: 8vh;
+margin-left: 2vw;
+}
+
+.retanguloheader h1 {
+    font-family: 'Audiowide';
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.legendas {
+       width: 85vw;
+    justify-content: end;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.legendas li {
+    font-size: 1vw;
+}
+
+header {
+    background-image: url("img/imgfundoheader.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.robo {
+    display: flex;
+    height: 7vh;
+}
+
+.cabeçalho2{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 5vh;
+    
+}
+.iperenetitulo {
+    font-family: 'Audiowide';
+    font-size: 10vh;
+    margin-top: 1vh;
+    
+  
+}
+
+.retangulosinopse {
+   background-color: rgb(253, 230, 29);
+   width: 35vw;
+   height: 15vh;
+   border-radius: 10px;
+   align-items: center;
+   display: flex;
+  
+}
+
+.textosinopse {
+    font-size: 1vw;
+    text-align: center;
+    font-family: 'Audiowide';
+}
+
+/* HEADER TERMINA AQUI*/
+
+.barrinha {
+    background-color: rgb(253, 230, 29);
+    width: 100vw;
+   height: 2vh;
+}
+
+/*MAIN COMEÇA AQUI*/
+
+/*(O QUE É A IPERENE COMEÇA AQUI)*/
+
+.oqueiperene{
+    margin-top: 5vh;
+}
+
+.wrappersobre-iperene {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.retangulosobre {
+    background-color: rgb(253, 230, 29);
+   width: 20vw;
+   height: 10vh;
+   border-radius: 30vh; 
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   
+}
+
+.retangulosobre h1 {
+    font-size: 2vw;
+    font-family: 'Audiowide';
+}
+
+
+.oque {
+    font-size: 1vw;
+}
+.historia1 {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: space-around;
+    
+   
+}
+
+.texto1{
+    max-width: 45vw;
+    font-size: 2.5vh;   
+      text-align: justify;
+}
+
+.logoiperene2 {
+  display: flex;
+  height: 25vh;
+  transition: 0.3s;
+}
+
+.logoiperene2:hover {
+     filter: brightness(1.5);
+    transition: 0.3s;
+      transform: translate(10px, -10px);
+    
+     
+}
+
+.historia2 {
+    margin-top: 2vh;
+    margin-left: 10vw;
+    display: flex;
+    
+}
+
+.wrapperimgshistoria {
+    display: flex;
+    max-width: 15vw;
+}
+
+.historiaimg1 {
+    height: 20vw;
+    display: flex;
+    
+}
+
+
+
+.historiaimg2 {
+    position: absolute;
+   justify-content: center;
+   display: flex;
+  transform: translate(7vw, 20vh);
+   height: 13vw;
+}
+
+
+
+.textohistoria2 {
+    max-width: 50%;
+    font-size: 2.5vh;   
+     text-align: justify;
+     margin-top: 4vh;
+   
+}
+
+.wrappertextohistoria2 {
+  flex-direction: column;
+  gap: 5vh;
+  display: flex;
+  transform: translateX(6vw);
+  
+  
+}
+.textohistoria3 {
+max-width: 40vw;
+    font-size: 2.5vh;   
+     margin-top: 4vh;
+}
+
+/*(O QUE É A IPERENE TERMINA AQUI)*/
+
+.barrinha2 {
+    background-color: rgb(253, 230, 29);
+    width: 100vw;
+   height: 2vh;
+   margin-top: 5.5vh;
+}
+
+.cincopilares{
+    margin-top: 5vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   
+
+}
+.retangulo5pilares {
+  background-color: rgb(253, 230, 29);
+   width: 20vw;
+   height: 10vh;
+   border-radius: 30vh; 
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   font-family: 'Audiowide';
+   
+}
+
+.retangulo5pilares h1 {
+      font-size: 2vw;
+    font-family: 'Audiowide';
+}
+
+
+.wrappercincopilares{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*QUALIDADE*/
+
+.horizontal1 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+    transform: translateX(-5vw);
+}
+
+.pilar {
+  
+height: 35vh;
+    display: flex;
+}
+.certificado {
+    height: 11vh;
+    display: flex;
+}
+
+.retangulohorizontal1{
+background-color: rgb(253, 230, 29);
+   width: 40vw;
+   height: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 10px;
+   
+}
+
+.retangulohorizontal1 p {
+    font-size: 1.5vw;
+    font-family: 'Mada', sans-serif;
+    text-align: justify;
+   width: 35vw;
+}
+
+.wrapperpilastraecertificado{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.wrappertextoshorizontal1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    
+}
+
+.wrappertextoshorizontal1 h1 {
+     font-size: 2vw;
+    font-family: 'Audiowide';
+}
+
+/*CONFIANÇA*/
+
+.horizontal2 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+    transform: translateX(7.5vw);
+}
+
+.pilar {
+  
+height: 35vh;
+    display: flex;
+}
+.escudo {
+    height: 11vh;
+    display: flex;
+}
+
+.retangulohorizontal2{
+background-color: rgb(253, 230, 29);
+   width: 40vw;
+   height: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 10px;
+   
+}
+
+.retangulohorizontal2 p {
+    font-size: 1.5vw;
+    font-family: 'Mada', sans-serif;
+    text-align: justify;
+   width: 35vw;
+}
+
+.wrapperpilastraecertificado{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.wrappertextoshorizontal2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    
+}
+
+.wrappertextoshorizontal2 h1 {
+     font-size: 2vw;
+    font-family: 'Audiowide';
+}
+
+/*SEGURANÇA*/
+
+.horizontal3 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+    transform: translateX(-5vw);
+}
+
+.pilar {
+  
+height: 35vh;
+    display: flex;
+}
+.segurança {
+    height: 11vh;
+    display: flex;
+}
+
+.retangulohorizontal3{
+background-color: rgb(253, 230, 29);
+   width: 40vw;
+   height: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 10px;
+   
+}
+
+.retangulohorizontal3 p {
+    font-size: 1.5vw;
+    font-family: 'Mada', sans-serif;
+    text-align: justify;
+   width: 35vw;
+}
+
+.wrapperpilastraecertificado{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.wrappertextoshorizontal3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    
+}
+
+.wrappertextoshorizontal3 h1 {
+     font-size: 2vw;
+    font-family: 'Audiowide';
+}
+
+/*DISCIPLINA*/
+
+.horizontal4 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+    transform: translateX(7.5vw);
+}
+
+.pilar {
+  
+height: 35vh;
+    display: flex;
+}
+.disciplina{
+    height: 11vh;
+    display: flex;
+}
+
+.retangulohorizontal4{
+background-color: rgb(253, 230, 29);
+   width: 40vw;
+   height: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 10px;
+   
+}
+
+.retangulohorizontal4 p {
+    font-size: 1.5vw;
+    font-family: 'Mada', sans-serif;
+    text-align: justify;
+   width: 35vw;
+}
+
+.wrapperpilastraecertificado{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.wrappertextoshorizontal4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    
+}
+
+.wrappertextoshorizontal4 h1 {
+     font-size: 2vw;
+    font-family: 'Audiowide';
+}
+
+/*SEGURANÇA*/
+
+.horizontal5 {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+    transform: translateX(-5vw);
+}
+
+.pilar {
+  
+height: 35vh;
+    display: flex;
+}
+.colaboracao{
+    height: 11vh;
+    display: flex;
+}
+
+.retangulohorizontal5{
+background-color: rgb(253, 230, 29);
+   width: 40vw;
+   height: 30vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border: 10px;
+   
+}
+
+.retangulohorizontal5 p {
+    font-size: 1.5vw;
+    font-family: 'Mada', sans-serif;
+    text-align: justify;
+   width: 35vw;
+}
+
+.wrapperpilastraecertificado{
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.wrappertextoshorizontal5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    
+}
+
+.wrappertextoshorizontal5 h1 {
+     font-size: 2vw;
+    font-family: 'Audiowide';
+}
