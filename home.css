@@ -9,14 +9,17 @@ body {
     margin: 0;
     overflow-x: hidden;
     max-width: 100vw;
+    
+
   
 }
 .retanguloheader {
     width: 100vw;
     height: 10vh;
-    background-color: rgb(253, 230, 29);
+    background-color: rgb(255, 255, 255);
   align-items: center;
   display: flex;
+
   
   
 }
@@ -39,6 +42,8 @@ margin-left: 2vw;
     display: flex;
     gap: 1vw;
     align-items: center;
+    font-family: 'Mada', sans-serif;
+    font-weight: 500;
 }
 
 .legendas li {
@@ -50,17 +55,23 @@ ul {
 }
 
 header {
-    background-image: url("img/imgfundoheader.png");
+   background-image:
+        linear-gradient(to left, transparent, #000000 100%),
+        url("img/imgfundoheader.png");
+
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+
 }
 
-.robo {
+.lua {
     display: flex;
-    height: 7vh;
+    height: 3vh;
+    margin-left: 100px;
 }
 
 .cabeçalho2{
@@ -96,458 +107,127 @@ header {
 
 /* HEADER TERMINA AQUI*/
 
-.barrinha {
-    background-color: rgb(253, 230, 29);
+
+.cabecarioprincipal {
+    margin-left: 4vw;
     width: 100vw;
-   height: 2vh;
+    margin-top: 9vh;
+}
+
+.adaptflore{
+    font-size: 55px;
+    font-family: 'Murecho', sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-left: 5vw;
+}
+
+.adaptflore span:nth-child(1) {
+    color: #BB0AC0;
+}
+
+.adaptflore span:nth-child(2) {
+    color: #FF14A7;
+}
+
+.textoiperene {
+    font-size: 25px;
+    width: 35vw;
+    color: white;
+    margin-top: 4vh;
+    font-family: 'Anek Malayalam', sans-serif;
+    line-height: 4.5vh;
+}
+
+.portcontact {
+    display: flex;
+    gap: 1vw;
+}
+
+.retanguloport {
+    height: 4.5vh;
+    width: 13vw;
+    background-color: #8D0991;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    display: flex;
+    gap: 0.5vw;
+     font-family: 'Anek Malayalam', sans-serif;
+     font-size: 24px;
+     
+}
+
+.port {
+    color: white;
+    
+}
+
+.seta {
+    height: 5vh;
+    
+}
+
+
+.retangulocontact {
+     height: 4.5vh;
+    width: 13vw;
+    background-color: #8D0991;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    display: flex;
+    gap: 1vw;
+     font-family: 'Anek Malayalam', sans-serif;
+     font-size: 24px;
+}
+
+.projetosconclu {
+   background-color: rgba(63, 63, 63, 0.3);
+    height: 4.7vh;
+    width: 17vw;
+    margin-top: 4vh;
+    border-radius: 10vh;
+    border: solid #8D0991 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+   opacity: 90%;
+}
+
+.computa {
+    height: 3vh;
+}
+
+.textconclu {
+    color: white;
+    font-size: 2.5vh;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.linha1 {
+    height: 0.3vh;
+    width: 47vw;
+    background-color: #8D0991;
+    margin-top: 3vh;
+}
+
+.linha2 {
+    height: 0.3vh;
+    width: 20vw;
+    background-color: #4E0DA0;
+    margin-top: 2vh;
+}
+
+.linha3 {
+    height: 0.3vh;
+    width: 35vw;
+    background-color: #FF009F;
+    margin-top: 2vh;
 }
 
 /*MAIN COMEÇA AQUI*/
 
-/*(O QUE É A IPERENE COMEÇA AQUI)*/
-
-.oqueiperene{
-    margin-top: 5vh;
-}
-
-.wrappersobre-iperene {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-}
-.retangulosobre {
-    background-color: rgb(253, 230, 29);
-   width: 20vw;
-   height: 10vh;
-   border-radius: 30vh; 
-   justify-content: center;
-   display: flex;
-   align-items: center;
-   
-}
-
-.retangulosobre h1 {
-    font-size: 2vw;
-    font-family: 'Audiowide';
-}
-
-
-.oque {
-    font-size: 1vw;
-}
-.historia1 {
-    display: flex;
-    margin-top: 5vh;
-    justify-content: space-around;
-    
-   
-}
-
-.texto1{
-    max-width: 45vw;
-    font-size: 2.5vh;   
-      text-align: justify;
-}
-
-.logoiperene2 {
-  display: flex;
-  height: 25vh;
-  transition: 0.3s;
-}
-
-.logoiperene2:hover {
-cursor: pointer;
-}
-.logoiperene2:hover {
-     filter: brightness(1.5);
-    transition: 0.3s;
-      transform: translate(10px, -10px);
-    
-     
-}
-
-.historia2 {
-    margin-top: 2vh;
-    margin-left: 10vw;
-    display: flex;
-    
-}
-
-.wrapperimgshistoria {
-    display: flex;
-    max-width: 15vw;
-}
-
-.historiaimg1 {
-    height: 20vw;
-    display: flex;
-    
-}
-
-
-
-.historiaimg2 {
-    position: absolute;
-   justify-content: center;
-   display: flex;
-  transform: translate(7vw, 20vh);
-   height: 13vw;
-}
-
-
-
-.textohistoria2 {
-    max-width: 50%;
-    font-size: 2.5vh;   
-     text-align: justify;
-     margin-top: 4vh;
-   
-}
-
-.wrappertextohistoria2 {
-  flex-direction: column;
-  gap: 5vh;
-  display: flex;
-  transform: translateX(6vw);
-  
-  
-}
-.textohistoria3 {
-max-width: 40vw;
-    font-size: 2.5vh;   
-     margin-top: 4vh;
-}
-
-/*(O QUE É A IPERENE TERMINA AQUI)*/
-
-.barrinha2 {
-    background-color: rgb(253, 230, 29);
-    width: 100vw;
-   height: 2vh;
-   margin-top: 5.5vh;
-}
-
-.cincopilares{
-    margin-top: 5vh;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   
-
-}
-.retangulo5pilares {
-  background-color: rgb(253, 230, 29);
-   width: 20vw;
-   height: 10vh;
-   border-radius: 30vh; 
-   justify-content: center;
-   display: flex;
-   align-items: center;
-   font-family: 'Audiowide';
-   
-}
-
-.retangulo5pilares h1 {
-      font-size: 2vw;
-    font-family: 'Audiowide';
-}
-
-
-.wrappercincopilares{
-    display: flex;
-    justify-content: center;
-}
-
-
-/*QUALIDADE*/
-
-.horizontal1 {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-    justify-content: center;
-    transform: translateX(-5vw);
-}
-
-.pilar {
-  
-height: 35vh;
-    display: flex;
-}
-.certificado {
-    height: 11vh;
-    display: flex;
-}
-
-.retangulohorizontal1{
-background-color: rgb(253, 230, 29);
-   width: 40vw;
-   height: 30vh;
- display: flex;
- align-items: center;
- justify-content: center;
- border: 10px;
-   
-}
-
-.retangulohorizontal1 p {
-    font-size: 1.5vw;
-    font-family: 'Mada', sans-serif;
-    text-align: justify;
-   width: 35vw;
-}
-
-.wrapperpilastraecertificado{
-justify-content: center;
-align-items: center;
-display: flex;
-flex-direction: column;
-}
-.wrappertextoshorizontal1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    
-}
-
-.wrappertextoshorizontal1 h1 {
-     font-size: 2vw;
-    font-family: 'Audiowide';
-}
-
-/*CONFIANÇA*/
-
-.horizontal2 {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-    justify-content: center;
-    transform: translateX(7.5vw);
-}
-
-.pilar {
-  
-height: 35vh;
-    display: flex;
-}
-.escudo {
-    height: 11vh;
-    display: flex;
-}
-
-.retangulohorizontal2{
-background-color: rgb(253, 230, 29);
-   width: 40vw;
-   height: 30vh;
- display: flex;
- align-items: center;
- justify-content: center;
- border: 10px;
-   
-}
-
-.retangulohorizontal2 p {
-    font-size: 1.5vw;
-    font-family: 'Mada', sans-serif;
-    text-align: justify;
-   width: 35vw;
-}
-
-.wrapperpilastraecertificado{
-justify-content: center;
-align-items: center;
-display: flex;
-flex-direction: column;
-}
-.wrappertextoshorizontal2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    
-}
-
-.wrappertextoshorizontal2 h1 {
-     font-size: 2vw;
-    font-family: 'Audiowide';
-}
-
-/*SEGURANÇA*/
-
-.horizontal3 {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-    justify-content: center;
-    transform: translateX(-5vw);
-}
-
-.pilar {
-  
-height: 35vh;
-    display: flex;
-}
-.segurança {
-    height: 11vh;
-    display: flex;
-}
-
-.retangulohorizontal3{
-background-color: rgb(253, 230, 29);
-   width: 40vw;
-   height: 30vh;
- display: flex;
- align-items: center;
- justify-content: center;
- border: 10px;
-   
-}
-
-.retangulohorizontal3 p {
-    font-size: 1.5vw;
-    font-family: 'Mada', sans-serif;
-    text-align: justify;
-   width: 35vw;
-}
-
-.wrapperpilastraecertificado{
-justify-content: center;
-align-items: center;
-display: flex;
-flex-direction: column;
-}
-.wrappertextoshorizontal3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    
-}
-
-.wrappertextoshorizontal3 h1 {
-     font-size: 2vw;
-    font-family: 'Audiowide';
-}
-
-/*DISCIPLINA*/
-
-.horizontal4 {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-    justify-content: center;
-    transform: translateX(7.5vw);
-}
-
-.pilar {
-  
-height: 35vh;
-    display: flex;
-}
-.disciplina{
-    height: 11vh;
-    display: flex;
-}
-
-.retangulohorizontal4{
-background-color: rgb(253, 230, 29);
-   width: 40vw;
-   height: 30vh;
- display: flex;
- align-items: center;
- justify-content: center;
- border: 10px;
-   
-}
-
-.retangulohorizontal4 p {
-    font-size: 1.5vw;
-    font-family: 'Mada', sans-serif;
-    text-align: justify;
-   width: 35vw;
-}
-
-.wrapperpilastraecertificado{
-justify-content: center;
-align-items: center;
-display: flex;
-flex-direction: column;
-}
-.wrappertextoshorizontal4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    
-}
-
-.wrappertextoshorizontal4 h1 {
-     font-size: 2vw;
-    font-family: 'Audiowide';
-}
-
-/*SEGURANÇA*/
-
-.horizontal5 {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    gap: 5vw;
-    justify-content: center;
-    transform: translateX(-5vw);
-}
-
-.pilar {
-  
-height: 35vh;
-    display: flex;
-}
-.colaboracao{
-    height: 11vh;
-    display: flex;
-}
-
-.retangulohorizontal5{
-background-color: rgb(253, 230, 29);
-   width: 40vw;
-   height: 30vh;
- display: flex;
- align-items: center;
- justify-content: center;
- border: 10px;
-   
-}
-
-.retangulohorizontal5 p {
-    font-size: 1.5vw;
-    font-family: 'Mada', sans-serif;
-    text-align: justify;
-   width: 35vw;
-}
-
-.wrapperpilastraecertificado{
-justify-content: center;
-align-items: center;
-display: flex;
-flex-direction: column;
-}
-.wrappertextoshorizontal5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5vh;
-    
-}
-
-.wrappertextoshorizontal5 h1 {
-     font-size: 2vw;
-    font-family: 'Audiowide';
-}
