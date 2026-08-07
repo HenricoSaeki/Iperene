@@ -231,3 +231,333 @@ header {
 
 /*MAIN COMEÇA AQUI*/
 
+.estatisticas {
+    width: 100%;
+    height: 20vh;
+    border-bottom: solid black 1px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    gap: 10vw;
+    align-items: center;
+}
+
+.textoproject {
+    width: 10vw;
+    text-align: center;
+}
+
+.estatisticas span:nth-child(1) {
+    color: #8D0991;
+    font-size: 5vh;
+    display: block;
+}
+
+.textoexperiencia {
+     width: 10vw;
+    text-align: center;
+}
+
+.estatisticas span:nth-child(2) {
+    color: #8D0991;
+    font-size: 5vh;
+    display: block;
+}
+
+.textogameficados {
+  width: 10vw;
+    text-align: center;  
+}
+
+.estatisticas span:nth-child(3) {
+    color: #8D0991;
+    font-size: 5vh;
+    display: block;
+}
+
+.textosatisfacao {
+  width: 10vw;
+    text-align: center;
+}
+
+.estatisticas span:nth-child(4) {
+    color: #8D0991;
+    font-size: 5vh;
+    display: block;
+}
+
+.cimaparte {
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.wrappercimaparte {
+width: 100%;
+flex-direction: column;
+align-items: center;
+display: flex;
+gap: 3vh;
+}
+
+.retangulosobre {
+    height: 5vh;
+    width: 9vw;
+    border-radius: 5vh;
+    background-color: #FEDFFF;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Basic', sans-serif;
+    font-weight: 400;
+    color: #8D0991;
+}
+
+.somosnos {
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400;
+}
+
+.textoeimagem {
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+justify-content: center;
+    padding-left: 5vw;
+    padding-right: 1vw;
+    gap: 5vw;
+}
+
+.textos {
+    font-family: 'Mada', sans-serif;
+    font-weight: 500;
+    flex-direction: column;
+    gap: 5vh;
+    display: flex;
+   text-align: justify;
+}
+
+.textosomos1 {
+    font-size: 3vh;
+    width: 43vw;
+}
+
+.textosomos2 {
+    font-size: 3vh;
+    width: 43vw;
+}
+
+.barrinha {
+    border-top: solid black 1px;
+  margin-top: 5vh;
+ 
+}
+
+.triplecards {
+  margin-top: 5vh;
+ display: flex;
+ justify-content: space-between;
+ padding-left: 4vw;
+ padding-right: 4vw;
+  
+}
+
+.card {
+    width: 22vw;
+    height: 24vh;
+    background-color: #4E0DA0;
+    border-radius: 2vh;
+   padding-left: 25px;
+     background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    
+    
+}
+
+.partecimami {
+    display: flex;
+    height: 50px;
+    align-items: center;
+       padding-top: 4vh;
+       gap: 1vw;
+       
+}
+
+.partecimami h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.alvo {
+    height: 6vh;
+}
+
+.textmission {
+   padding-top: 4vh;
+    font-size: 25px;
+      font-family: 'Mada', sans-serif;
+    font-weight: 400;
+}
+
+.lista {
+    margin-top: 3vh;
+    font-size: 25px;
+      font-family: 'Mada', sans-serif;
+    font-weight: 400;
+    list-style-type: disc;
+    margin-left: 1.3vw;
+}
+
+.wrapperlinha4 {
+    display: flex;
+    justify-content: center;
+}
+
+.linha4 {
+     height: 0.5vh;
+    width: 25vw;
+    background-color: #8D0991;
+    margin-top: 3vh;
+}
+
+.cimaparte {
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.wrappercimaparte {
+width: 100%;
+flex-direction: column;
+align-items: center;
+display: flex;
+gap: 3vh;
+}
+
+.retanguloqualidades {
+    height: 5vh;
+    width: 9vw;
+    border-radius: 5vh;
+    background-color: #FEDFFF;
+    color: #8D0991;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Basic', sans-serif;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
+.pilares5 {
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: 400px;
+     margin-top: vh;
+}
+
+
+.bolinhas5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    height: 50v;
+    position: relative;
+}
+
+.wrapperbolinhas {
+    display: flex;
+    gap: 15vw;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.linha5 {
+height: 2vh;
+    width: 73vw;
+    background-color: #DFCAFA;
+    position: absolute;
+    margin-left: 1vh;
+    z-index: 1;
+}
+
+.item {
+ display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.circulos {
+    height: 8vh;
+    width: 4vw;
+     background-color: #DFCAFA;
+     border-radius: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+
+.linha6 {
+      position: absolute;
+    top: 50px;      /* começa logo abaixo da bolinha */
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 5px;
+    height: 8.8vh;
+    background: #DFCAFA;
+
+    z-index: 1;
+
+}
+
+.imgs {
+    height: 5vh;
+    z-index: 2;
+    position: relative;
+}
+
+
+.retangulocards {
+    height: 0vw;
+    width: 100vw;
+   background-color: #BB0AC0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    padding: 0;
+}
+
+
+.cardzin {
+       height: 20vw;
+    width: 15vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.cardzin h1{
+    margin-top: 2vh;
+    font-family: 'Anek Malayalam', sans-serif;
+}
+
+.cardzin p{
+    width: 12vw;
+    margin-top: 2vh;
+font-family: 'Mada', sans-serif;
+    font-weight: 400;
+    font-size: 2vh;
+    text-align: justify;
+}
