@@ -30,6 +30,12 @@ body {
 margin-left: 2vw;
 }
 
+.iperene {
+    font-style: italic;
+    font-family: 'Audiowide';
+    color: #000000;
+}
+
 .retanguloheader h1 {
     font-family: 'Audiowide';
     margin-left: 0.5vw;
@@ -432,8 +438,8 @@ font-weight: normal;
 }
 
 .titulosessao {
-font-family: 'Basic', sans-serif
-  
+font-family: 'Basic', sans-serif;
+  font-weight: 500;
 }
 
 .textosessao {
@@ -713,9 +719,6 @@ padding: 3vh 0 0 2vw;
     height: 5vh;
     margin: 0 2vw 0 2vw;
 }
-.conjuntoestrelas {
-   
-}
 
 
 .estrelaroxa {
@@ -726,7 +729,7 @@ padding: 3vh 0 0 2vw;
 .opiniao {
       font-family: 'Mada', sans-serif;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 1px;
    width: 80%;
     text-align: justify;
@@ -807,6 +810,7 @@ background-color: #4E0DA0
  width: 40vw;
  font-family: 'Hammersmith One', sans-serif;   
  font-size: 10vh;
+ font-weight: 500;
 }
 
 .textoequipe {
@@ -819,9 +823,175 @@ background-color: #4E0DA0
 
 
 .retanuglosla {
-    height: 45vh;
+    height: 50vh;
     width: 40vw;
     background-color: #D9D9D9;
-=======
->>>>>>> e710b8d874f6b28970261a62ead15c6a55fa6b91
+}
+
+.perfisdevs {
+       display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    justify-content: space-between;
+   margin-top: 10vh;
+   padding: 0 7vw 0 7vw;
+   
+}
+
+.perfil {
+    background-color: #8D0991;
+      height: 50vh;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.wrapperperfil {
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.fotoperfil {
+    height: 25vh;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+
+.wrapperperfil h2 {
+    margin-top: 1.5vh;
+    font-family: 'Mada', sans-serif;
+    font-size: 3vh;
+}
+
+
+.wrapperperfil h3:first-of-type{
+    margin-top: 2vh;
+    font-family: 'Mada', sans-serif;
+    color: #4E0DA0;
+     font-size: 2.5vh;
+     font-weight: 300;
+}
+
+.wrapperperfil h3:nth-of-type(2){
+    margin-top: 1vh;
+    font-family: 'Mada', sans-serif;
+    color: #6D6D6D;
+    font-size: 2.5vh;
+    font-weight: 300;
+}
+
+
+.iconesroxos {
+    display: flex;
+   justify-content: end;
+    height: 5vh;
+ margin: 2vh 1vw 0 0
+}
+
+.barras {
+    display: flex;
+    justify-content: center;  
+    gap: 1vw;
+}
+
+.barras :first-child {
+     height: 1.5vh;
+    width: 10vw;
+    background-color: #828282;
+    border-radius: 10px;
+margin: 5vh 0 10vh 0;
+}
+
+
+
+.barrabarrabarra {
+    height: 1.5vh;
+    width: 10vw;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+margin: 5vh 0 5vh 0;
+}
+
+footer {
+     background: linear-gradient(to bottom, #FFFFFF, #8D0991, #8D0991);
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+}
+
+.containerfootercima {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.titulofooter {
+    font-size: 10vh;
+       font-family: 'Anek Malayalam', sans-serif;
+}
+
+.subtitulofooter {
+    font-family: 'Anek Malayalam', sans-serif;
+    font-size: 5vh;
+    font-weight: 400;
+}
+
+.botaocontato {
+    display: flex;
+    height: 5vh;
+    width: 20vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+     margin-top: 2vh;
+     gap: 2vh;
+      font-family: 'Mada', sans-serif;
+      color: #8D0991;
+}
+
+.botaocontato img{
+    height: 6vh;
+}
+
+.containerfooterbaixo {
+    display: flex;
+    gap: 5vw;
+      font-family: 'Anek Malayalam', sans-serif;
+      color: white;
+      align-items: center;
+      justify-content: ;
+}
+
+.retangulofooter1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.wrapperret1 {
+    display: flex;
+    align-items: center;
+}
+
+.retangulofooter1 p {
+    width: 20vw;
+    text-align: justify;
+   font-family: 'Anek Malayalam', sans-serif;
+   font-weight: 600;
+   color: white;
+   font-size: 3vh;
+}
+
+.retangulofooter2 .wrapperret1 {
+    flex-direction: column;
+    display: flex;
+}
+
+.topicos {
+    font-size: 2vh;
 }
