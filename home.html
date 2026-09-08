@@ -21,8 +21,10 @@
 <header>
 <div class="cabeçalho">
     <div class="retanguloheader">
-        <div class="logoiperene1"><img src="img/img2legitmologocerta.png"></div>
-        <h1 class="iperene">Iperene</h1>
+        <div class="logoiperene1">
+    <img id="logoHeader" src="img/logoiperenecerta.png">
+</div>
+        
 
 
 <nav> 
@@ -32,7 +34,7 @@
         <li>Avaliações</li>
         <li>Portifolio</li>
         <li>Contato</li>
-        <div class="lua"><img src="img/image 282.png"></div>
+       <img id="tema" class="lua" src="img/image 282.png" onclick="modoNoite()">
     </ul>   
 </nav>
 </div>
@@ -101,25 +103,39 @@
 <div class="barrinha"></div>
 
 <div class="triplecards">
+
     <div class="card">
         <div class="partecimami">
-            <img class="alvo" src="/img/Group 35 missao.png"> <h1>Missão</h1>
+            <img id="iconeMissao" class="alvo" src="/img/Group 35 missao.png">
+            <h1>Missão</h1>
         </div>
-        <p class="textmission">Criar softwares capacitados e de acordo com o cliente, além de deixá-los com gameficação.</p>    
+
+        <p class="textmission">
+            Criar softwares capacitados e de acordo com o cliente, além de deixá-los com gameficação.
+        </p>
     </div>
 
 
     <div class="card">
         <div class="partecimami">
-            <img class="alvo" src="/img/Group 36 visao.png"> <h1>Visão</h1>
+            <img id="iconeVisao" class="alvo" src="/img/Group 36 visao.png">
+            <h1>Visão</h1>
         </div>
-        <p class="textmission">Ser uma empresa em destaque no mercado nacional e internacional.</p>    
+
+        <p class="textmission">
+            Ser uma empresa em destaque no mercado nacional e internacional.
+        </p>
     </div>
 
-<div class="card">
+
+    <div class="card">
         <div class="partecimami">
-            <img class="alvo" src="/img/Group 37 valores.png"> <h1>Valores</h1>
-        </div>
+            <img id="iconeValores" class="alvo" src="/img/Group 37 valores.png">
+            <h1>Valores</h1>
+        
+
+        <!-- sua lista aqui -->
+    </div>
            <ul class="lista">
     <li>Confiabilidade</li>
     <li>Disciplina</li>
@@ -146,53 +162,47 @@
 </div>
 
 
-<div class="bolinhas5">
+<div class="cimaparte">
     <div class="wrapperbolinhas">
         <div class="linha5"></div>
 
         <div class="item">
             <div class="circulos">
-                <img class="imgs" src="img/img camera.png"></div>
-            <div class="linha6"></div>
-    
-        </div>
-       
-
-
- <div class="item">
-        <div class="circulos">
-            <img class="imgs" src="img/img mao.png"></div>
+                <img id="iconeQualidade" class="imgs" src="img/img camera.png">
+            </div>
             <div class="linha6"></div>
         </div>
-        
 
-
- <div class="item">
-        <div class="circulos">
-            <img class="imgs" src="img/img cadeado.png"></div>
+        <div class="item">
+            <div class="circulos">
+                <img id="iconeConfianca" class="imgs" src="img/img mao.png">
+            </div>
             <div class="linha6"></div>
         </div>
-        
 
-
-         <div class="item">
-        <div class="circulos">
-            <img class="imgs" src="img/img relogio.png"></div>
+        <div class="item">
+            <div class="circulos">
+                <img id="iconeSeguranca" class="imgs" src="img/img cadeado.png">
+            </div>
             <div class="linha6"></div>
         </div>
-       
 
-
-
-         <div class="item">
-        <div class="circulos">
-            <img class="imgs" src="img/img pessoa.png"></div>
+        <div class="item">
+            <div class="circulos">
+                <img id="iconeDisciplina" class="imgs" src="img/img relogio.png">
+            </div>
             <div class="linha6"></div>
         </div>
-        
-        
+
+        <div class="item">
+            <div class="circulos">
+                <img id="iconeColaboracao" class="imgs" src="img/img pessoa.png">
+            </div>
+            <div class="linha6"></div>
+        </div>
+
     </div>
-
+</div>
 
 
 </div>
@@ -247,9 +257,16 @@ Acreditamos que a união de esforços e ideias potencializa resultados em um amb
 
     <div class="servico">
         <h1 class="number">01</h1>
+
         <div class="wrapperimagens">
             <h2 class="titletext">Design</h2>
-            <img class="img1" src="img/img 1 sericos.png">
+
+            <div class="imagemservico">
+                <img class="img1" src="img/img 1 sericos.png">
+                <div class="textohover">
+                    Criamos designs modernos e personalizados para destacar sua empresa.
+                </div>
+            </div>
         </div>
     </div>
 
@@ -257,9 +274,16 @@ Acreditamos que a união de esforços e ideias potencializa resultados em um amb
 
     <div class="servico">
         <h1 class="number">02</h1>
+
         <div class="wrapperimagens">
             <h2 class="titletext">Desenvolvimento de sistemas</h2>
-            <img class="img1" src="img/img 2 servicos.png">
+
+            <div class="imagemservico">
+                <img class="img1" src="img/img 2 servicos.png">
+                <div class="textohover">
+                    Desenvolvemos sistemas completos, eficientes e adaptados às necessidades do seu negócio.
+                </div>
+            </div>
         </div>
     </div>
 
@@ -267,9 +291,16 @@ Acreditamos que a união de esforços e ideias potencializa resultados em um amb
 
     <div class="servico">
         <h1 class="number">03</h1>
+
         <div class="wrapperimagens">
             <h2 class="titletext">Jogos</h2>
-            <img class="img1" src="img/img 3 servicos.png">
+
+            <div class="imagemservico">
+                <img class="img1" src="img/img 3 servicos.png">
+                <div class="textohover">
+                    Criamos experiências interativas e jogos para engajar e conectar seu público.
+                </div>
+            </div>
         </div>
     </div>
 
@@ -285,7 +316,7 @@ Acreditamos que a união de esforços e ideias potencializa resultados em um amb
 <div class="cimaparte">
 <div class="wrappercimaparte">
     <div class="retangulosessao">
-    <h1 class="titulosessao">Serviços</h1>
+    <h1 class="titulosessao">Projetos</h1>
     </div>
       <h1 class="textosessao">A oferta para a sua empresa</h1>
    
@@ -301,120 +332,564 @@ Acreditamos que a união de esforços e ideias potencializa resultados em um amb
 A PlayTime oferece uma ampla variedade de brinquedos educativos, criativos e divertidos, proporcionando momentos inesquecíveis para crianças e famílias com praticidade, segurança e qualidade.</p>
         </div>
     </div>
-    <div class="retanguloimenso"></div>
+
+
+
+<div class="wrapperprapornadireita">
+<div class="containerimagem">
+
+    <div class="imagenscarrossel">
+        <img src="img/Rectangle 475 cinza.png">
+        <img src="img/Rectangle 475 rosa.png">
+        <img src="img/Rectangle 475 azul.png">
+        <img src="img/Rectangle 475 red.png">
+    </div>
+
 </div>
+
 
 <div class="sessaominicarrossel">
-    <img class="setaroxa" src="img/seta roxa esquerda.png">
-
+    <img class="setaroxa" src="img/seta roxa esquerda.png" onclick="anterior()">
+    <div class="containercarrossel">
     <div class="wrapperretanguloscarrossel">
-
-    <div class="wrapperretanguloscarrossel"></div>
-
         <div class="retanguloscarrossel"></div>
         <div class="retanguloscarrossel"></div>
         <div class="retanguloscarrossel"></div>
         <div class="retanguloscarrossel"></div>
-
+    </div>
         </div>
-    <img class="setaroxa" src="img/seta roxa direita.png">
+    <img class="setaroxa" onclick="proximo()" src="img/seta roxa direita.png">
     </div>
 </div>
+</div>
+
+
+
    <div class="barrinha"></div>
 
 <div class="cimaparte">
-<div class="wrappercimaparte">
-    <div class="retangulosessao">
-    <h1 class="titulosessao">Avaliações</h1>
-    </div>
-      <h1 class="textosessao">Amado pelos clientes</h1>
-      <p class="falamsobreservico">Veja o que eles falaram sobre o serviço da Iperene</p>
-  </div>  
+    <div class="wrappercimaparte">
+        <div class="retangulosessao">
+            <h1 class="titulosessao">Avaliações</h1>
+        </div>
+
+        <h1 class="textosessao">Amado pelos clientes</h1>
+
+        <p class="falamsobreservico">
+    Veja o que eles falaram sobre o serviço da Iperene
+</p>
+</div>
 </div>
 
 
 <div class="card-avaliacao">
+
     <div class="wrapperavaliacao">
-        <img class="setacard" src="img/seta esquerda amado.png">
+
+        <!-- SETA ESQUERDA -->
+    <img class="setaAvaliacaoEsquerda"
+     src="img/setaesquerdadia.png"
+     onclick="anteriorCard()">
+
+
+        <!-- JANELA DO CARROSSEL -->
         <div class="containercards-avaliacao">
 
-            <div class="cardavaliacao">
-                <div class="conjuntoestrelas">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                </div>
-                <p class="opiniao">“Contratar a Iperene foi uma das melhores coisas que ocorreu na minha vida, pois transformou a capacidade da minha empresa.”</p>
-                <div class="wrapperbolinhanomecargo">
-                <div class="bolinhacomletra">
-                    <h1>L</h1>
-                </div>
-                <div class="nomeecargo">
-                    <p class="nomeperson">Linda</p>
-                    <p class="cargoperson">CEO e diretor executivo</p>
-                </div>
-                </div>
-            </div>
-            
+            <!-- FAIXA DOS 6 CARDS -->
+            <div class="wrappercards-avaliacao">
 
-            <div class="cardavaliacao">
+
+                <!-- CARD 1 -->
+                <div class="cardavaliacao">
+
                     <div class="conjuntoestrelas">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                </div>
-                <p class="opiniao">“A Iperene abriu novas portas e alcances para a nossa companhia, com um trabalho extremamente competente.”</p>
-                <div class="wrapperbolinhanomecargo">
-                <div class="bolinhacomletra">
-                    <h1>A</h1>
-                </div>
-                <div class="nomeecargo">
-                    <p class="nomeperson">Ana Sampaio</p>
-                    <p class="cargoperson">Líder de negócios</p>
-                </div>
-                </div>
-            </div>
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
 
-            <div class="cardavaliacao">
-            <div class="conjuntoestrelas">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
-                    <img class="estrelaroxa" src="img/estrela roxa.png">
+                    <p class="opiniao">
+                        “Contratar a Iperene foi uma das melhores coisas que ocorreu na minha vida, pois transformou a capacidade da minha empresa.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>L</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Linda</p>
+                            <p class="cargoperson">CEO e diretor executivo</p>
+                        </div>
+
+                    </div>
+
                 </div>
-                <p class="opiniao">“Contratar a Iperene foi uma das melhores coisas que ocorreu na minha vida, pois transformou a capacidade da minha empresa.”</p>
-                <div class="wrapperbolinhanomecargo">
-                <div class="bolinhacomletra">
-                    <h1>D</h1>
+
+
+                <!-- CARD 2 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “A Iperene abriu novas portas e alcances para a nossa companhia, com um trabalho extremamente competente.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>A</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Ana Sampaio</p>
+                            <p class="cargoperson">Líder de negócios</p>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="nomeecargo">
-                    <p class="nomeperson">Daniel Silva</p>
-                    <p class="cargoperson">Especialista de vendas</p>
+
+
+                <!-- CARD 3 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Contratar a Iperene foi uma das melhores coisas que ocorreu na minha vida, pois transformou a capacidade da minha empresa.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>D</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Daniel Silva</p>
+                            <p class="cargoperson">Especialista de vendas</p>
+                        </div>
+
+                    </div>
+
                 </div>
+
+
+                <!-- CARD 4 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “A Iperene abriu novas portas e alcances para a nossa companhia, com um trabalho extremamente competente.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>A</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Ana Sampaio</p>
+                            <p class="cargoperson">Líder de negócios</p>
+                        </div>
+
+                    </div>
+
                 </div>
+
+
+                <!-- CARD 5 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “A Iperene transformou nossa empresa através de soluções modernas e eficientes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>M</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Marcos</p>
+                            <p class="cargoperson">Diretor comercial</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- CARD 6 -->
+                <div class="cardavaliacao">
+
+                    <div class="conjuntoestrelas">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                        <img class="estrelaroxa" src="img/estrela roxa.png">
+                    </div>
+
+                    <p class="opiniao">
+                        “Um serviço excelente, com muita qualidade e atenção aos detalhes.”
+                    </p>
+
+                    <div class="wrapperbolinhanomecargo">
+
+                        <div class="bolinhacomletra">
+                            <h1>R</h1>
+                        </div>
+
+                        <div class="nomeecargo">
+                            <p class="nomeperson">Rafael</p>
+                            <p class="cargoperson">Gerente de projetos</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
             </div>
+            <!-- FIM DA FAIXA -->
+
         </div>
-    <img class="setacard" src="img/seta direita amado.png">
+        <!-- FIM DA JANELA -->
+
+
+        <!-- SETA DIREITA -->
+   <img class="setaAvaliacaoDireita"
+     src="img/setadireitadia.png"
+     onclick="proximoCard()">
+
     </div>
+
+</div>
+
+
+<!-- BARRINHAS -->
+<div class="wrapperretanguloscarrossel2">
 </div>
 
 
 
 
 
-
-    <div class="wrapperretanguloscarrossel2">
-        <div class="retanguloscarrossel2"></div>
-        <div class="retanguloscarrossel2"></div>
-        <div class="retanguloscarrossel2mod"></div>
-        <div class="retanguloscarrossel2"></div>
-        <div class="retanguloscarrossel2"></div>
-        </div>
 
 
 <div class="barrinha"></div>
@@ -440,79 +915,211 @@ A PlayTime oferece uma ampla variedade de brinquedos educativos, criativos e div
 </div>
 
 
-
-
-
-
-
-
-
-    </div>
 </div>
 
 
 <div class="perfisdevs">
-<div class="perfil">
-    <div class="wrapperperfil">
-        <img class="fotoperfil" src="img/garcia2.png">
-        <h2>Davi Ferreira Augusto Garcia</h2>
-        <h3>Desenvolvimento de Sistemas</h3>
-        <h3>Designer e programador front-end</h3>
-    </div>
-    <div class="iconesroxos">
-        <img class="setaroxaperfil" src="img/setaroxaperfil.png">
-        <img class="linkedinroxo" src="img/linkedinroxo.png">
-    </div>
-</div>
+
+    <img class="setaEsquerdaPerfil"
+     src="img/setaesquerdadia.png"
+     onclick="anteriorPerfil()">
+
+    <div class="containerperfis">
+
+        <div class="wrapperperfis">
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/garcia2.png">
+                    <h2>Davi Ferreira Augusto Garcia</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/henricocerto2.png">
+                    <h2>Henrico Saeki Rolim Issomura</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/dainezcerto.png">
+                    <h2>Lucas Dainez Lauand</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/forli.png">
+                    <h2>Lucas Forli Cardoso</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/garcia2.png">
+                    <h2>Davi Ferreira Augusto Garcia</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/henricocerto2.png">
+                    <h2>Henrico Saeki Rolim Issomura</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/dainezcerto.png">
+                    <h2>Lucas Dainez Lauand</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/forli.png">
+                    <h2>Lucas Forli Cardoso</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
 
 
 <div class="perfil">
-  <div class="wrapperperfil">
-        <img class="fotoperfil" src="img/henricocerto2.png">
-        <h2>Henrico Saeki Rolim Issomura</h2>
-        <h3>Desenvolvimento de Sistemas</h3>
-        <h3>Designer e programador front-end</h3>
-    </div>
-    <div class="iconesroxos">
-        <img class="setaroxaperfil" src="img/setaroxaperfil.png">
-        <img class="linkedinroxo" src="img/linkedinroxo.png">
-    </div>
-</div>
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/garcia2.png">
+                    <h2>Davi Ferreira Augusto Garcia</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
 
 
-<div class="perfil">
-  <div class="wrapperperfil">
-        <img class="fotoperfil" src="img/dainezcerto.png">
-        <h2>Lucas Dainez Lauand</h2>
-        <h3>Desenvolvimento de Sistemas</h3>
-        <h3>Designer e programador front-end</h3>
-    </div>
-    <div class="iconesroxos">
-        <img class="setaroxaperfil" src="img/setaroxaperfil.png">
-        <img class="linkedinroxo" src="img/linkedinroxo.png">
-    </div>
-</div>
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/henricocerto2.png">
+                    <h2>Henrico Saeki Rolim Issomura</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
 
 
-<div class="perfil">
-     <div class="wrapperperfil">
-        <img class="fotoperfil" src="img/forli.png">
-        <h2>Lucas Forli Cardoso</h2>
-        <h3>Desenvolvimento de Sistemas</h3>
-        <h3>Designer e programador front-end</h3>
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/dainezcerto.png">
+                    <h2>Lucas Dainez Lauand</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+            <div class="perfil">
+                <div class="wrapperperfil">
+                    <img class="fotoperfil" src="img/forli.png">
+                    <h2>Lucas Forli Cardoso</h2>
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <h3>Designer e programador front-end</h3>
+                </div>
+
+                <div class="iconesroxos">
+                    <img class="setaroxaperfil" src="img/setaroxaperfil.png">
+                    <img class="linkedinroxo" src="img/linkedinroxo.png">
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
-    <div class="iconesroxos">
-        <img class="setaroxaperfil" src="img/setaroxaperfil.png">
-        <img class="linkedinroxo" src="img/linkedinroxo.png">
-    </div>
+
+<img class="setaDireitaPerfil"
+     src="img/setadireitadia.png"
+     onclick="proximoPerfil()">
 </div>
-</div>
+
 
 
 <div class="barras">
-<div class="barrabarrabarra"></div>
-<div class="barrabarrabarra"></div>
-<div class="barrabarrabarra"></div>
+
 </div>
 
 </main>
@@ -535,11 +1142,14 @@ A PlayTime oferece uma ampla variedade de brinquedos educativos, criativos e div
 
     <div class="retangulofooter1">
         <div class="wrapperret1">
-            <div class="logoiperene1"><img src="img/iperenelogo.png"></div>
-            <h1 class="iperene">Iperene</h1>
+            <div class="retanguloimperene">
+                <div class="logoiperene2"><img src="img/logoiperenecerta.png"></div>
+              
+            </div>
         </div>
         <p>A Iperene Software desenvolve soluções digitais modernas, seguras e personalizadas para empresas que desejam crescer.</p>
     </div>
+
 
 <div class="retangulofooter2">
         <div class="wrapperret1">
@@ -555,29 +1165,32 @@ A PlayTime oferece uma ampla variedade de brinquedos educativos, criativos e div
 
 <div class="retangulofooter3">
         <div class="wrapperret3">
-            <h1>Navegação</h1>
-            
+            <h1>Serviços</h1>
         <p class="topicos">Design de Interfaces
-Desenvolvimento Web
-Gamificação
-Cibersegurança</p>
+    <p>Desenvolvimento Web</p>
+    <p>Gamificação</p>
+    <p>Cibersegurança</p>
         </div>
         </div>
 
-<div class="retangulofooter3">
-        <div class="wrapperret3">
-            <h1>Navegação</h1>
-            
-        <p class="topicos">Design de Interfaces
-Desenvolvimento Web
-Gamificação
-Cibersegurança</p>
+
+
+<div class="retangulofooter4">
+        <div class="wrapperret4">
+            <h1>Contato</h1>
+            <img src="img/SIMBOLOLOCAL.png">
+            <p>Av. Brig. Faria Lima, 650 - Pinheiros, São Paulo - SP, 05426-200</p>
+            <img src="img/icoine emailroxo.png">
+            <p>iperenedesenvolvimento@gmail.com</p>
+            <p>(11) 2793-6770</p>
         </div>
         </div>
 
 
 </div>
 
+
+<h3 class="direitosreservados">© 2026 Iperene Software. Todos os direitos reservados.</h3>
 
 </footer>
 

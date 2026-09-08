@@ -24,17 +24,15 @@ body {
   
 }
 
-.logoiperene1{
-  display: flex;
-  height: 8vh;
-margin-left: 2vw;
-}
+
 
 .iperene {
     font-style: italic;
     font-family: 'Audiowide';
     color: #000000;
 }
+
+
 
 .retanguloheader h1 {
     font-family: 'Audiowide';
@@ -43,6 +41,7 @@ margin-left: 2vw;
 }
 
 .legendas {
+    margin-left: 12   vw;
        width: 85vw;
     justify-content: end;
     display: flex;
@@ -50,11 +49,16 @@ margin-left: 2vw;
     align-items: center;
     font-family: 'Mada', sans-serif;
     font-weight: 500;
+    margin-left: 13vw;
+  
 }
 
 .legendas li {
     font-size: 1vw;
+  cursor: pointer;
 }
+
+
 
 ul {
     list-style-type: none;
@@ -78,6 +82,7 @@ header {
     display: flex;
     height: 3vh;
     margin-left: 100px;
+      cursor: pointer;
 }
 
 .cabeçalho2{
@@ -162,7 +167,7 @@ header {
     gap: 0.5vw;
      font-family: 'Anek Malayalam', sans-serif;
      font-size: 24px;
-     
+     cursor: pointer;
 }
 
 .port {
@@ -188,6 +193,7 @@ header {
     gap: 1vw;
      font-family: 'Anek Malayalam', sans-serif;
      font-size: 24px;
+     cursor: pointer;
 }
 
 .projetosconclu {
@@ -569,10 +575,20 @@ font-family: 'Mada', sans-serif;
     margin-top: vh;
 }
 
-.retanguloimagens123{
+.retanguloimagens123 {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 5vh;
+    align-items: flex-start;
+    
+    
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .wrapperimagens{
@@ -587,6 +603,49 @@ font-family: 'Mada', sans-serif;
     background-color: #8D0991;
    transform: translateY(80px);
    
+}
+
+.imagemservico {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.imagemservico .img1 {
+    display: block;
+}
+
+.textohover {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2vw;
+
+    color: white;
+    font-size: 1.3vw;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagemservico:hover .textohover {
+    opacity: 1;
+}
+
+.imagemservico:hover .textohover {
+    opacity: 1;
 }
 
 .number {
@@ -646,127 +705,200 @@ justify-content: center;
     background-color: #888888;
 }
 
-.setaroxa{
-   display: flex;
-   margin: 0 5vw 0 5vw;
+
+
+
+
+
+
+.setaroxa {
+    display: flex;
+cursor: pointer;
 }
 
 .sessaominicarrossel {
     display: flex;
- gap: 10px;
- justify-content: end;
- align-items: center;
-margin-right: 6vw;
+    gap: 10px;
+    align-items: center;
+    margin-right: 6vw;
+}
+
+
+.containerimagem {
+    width: 803px;
+    height: 528px;
+    overflow: hidden;
+}
+
+.imagenscarrossel {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.imagenscarrossel img {
+    width: 803px;
+    height: 528px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.setaAvaliacaoEsquerda {
+    cursor: pointer;
+}
+
+
+.setaAvaliacaoDireita {
+cursor: pointer;
+}
+
+
+.retanguloscarrossel {
+    height: 1.5vh;
+    width: 4vw;
+    border-radius: 10px;
+    background-color: #DFCAFA;
+}
+
+.retanguloscarrossel.ativo {
+    background-color: #5B0BB5;
 }
 
 .wrapperretanguloscarrossel {
+       display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    
+}
+
+.wrapperprapornadireita {
     display: flex;
-   
+    flex-direction: column;
+    align-items: end;
+    padding-right: 10v;
+    justify-content: center;
 }
 
-.retanguloscarrossel{
-height: 1.5vh;
-width: 4vw;
-border-radius: 10px;
-background-color: #DFCAFA;
-<<<<<<< HEAD
-}
 
-.falamsobreservico{
+
+
+
+.falamsobreservico {
     font-family: 'Anek Malayalam';
     font-size: 3vh;
     color: #888888;
 }
 
-
-.card-avaliacao{
+.card-avaliacao {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5vh;
 }
 
-
-
 .wrapperavaliacao {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
+
+/* JANELA DO CARROSSEL */
 .containercards-avaliacao {
-       display: grid;
-           grid-template-columns: repeat(3, 1fr);
+    width: 81.2vw;
+    max-width: 81.2vw;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+
+/* FAIXA DOS CARDS */
+.wrappercards-avaliacao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 3vw;
+    width: max-content;
+    transition: transform 0.5s ease;
 }
 
-.cardavaliacao{
-     background: white;
+
+/* CARDS */
+.cardavaliacao {
+    background: white;
+    border: 1px solid #E5E5E5;
     border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-     height: 37vh;
-      width: 25vw;
-    column-gap: 30px;
-display: flex;
-flex-direction: column;
-gap: 30px;
-padding: 3vh 0 0 2vw;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
 
+    height: 37vh;
+    width: 25vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding: 3vh 0 0 2vw;
+
+    flex-shrink: 0;
 }
 
-.setacard{
+.setacard {
     height: 5vh;
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw;
+    cursor: pointer;
 }
 
-
+/* ESTRELAS */
 .estrelaroxa {
     height: 4vh;
-    
 }
 
+/* OPINIÃO */
 .opiniao {
-      font-family: 'Mada', sans-serif;
-    font-size: 36px;
+    font-family: 'Mada', sans-serif;
+    font-size: 2.5vh;
     font-weight: 500;
     letter-spacing: 1px;
-   width: 80%;
+    width: 80%;
     text-align: justify;
-    font-size: 2.5vh;
 }
 
-.bolinhacomletra{
+/* NOME E CARGO */
+.wrapperbolinhanomecargo {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.bolinhacomletra {
     height: 6vh;
     width: 3vw;
     border-radius: 50px;
     background-color: #DFCAFA;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #4E0DA0;
-     font-family: 'Mada', sans-serif;
-}
 
-.wrapperbolinhanomecargo{
-    display: flex;
-    align-items: center;  
-    gap: 1vw;
+    color: #4E0DA0;
+    font-family: 'Mada', sans-serif;
 }
 
 .nomeperson {
-   font-family: 'Mada', sans-serif;
+    font-family: 'Mada', sans-serif;
     font-weight: 600;
-   font-size: 2.5vh;
+    font-size: 2.5vh;
 }
 
 .cargoperson {
-   font-family: 'Mada', sans-serif;
+    font-family: 'Mada', sans-serif;
     font-size: 2vh;
-  color: #666666;
-    font-weight: 00;
+    color: #666666;
 }
 
+/* BARRINHAS */
 .wrapperretanguloscarrossel2 {
     display: flex;
     justify-content: center;
@@ -776,18 +908,15 @@ padding: 3vh 0 0 2vw;
 
 .retanguloscarrossel2 {
     height: 2vh;
-width: 2.5vw;
-border-radius: 10px;
-background-color: #DFCAFA;
+    width: 2.5vw;
+    border-radius: 10px;
+    background-color: #DFCAFA;
 }
 
-.retanguloscarrossel2mod {
-     height: 2vh;
-width: 4.5vw;
-border-radius: 10px;
-background-color: #4E0DA0 
+.retanguloscarrossel2.ativo {
+    width: 4.5vw;
+    background-color: #4E0DA0;
 }
-
 
 .containerequipe {
     display: flex;
@@ -795,6 +924,14 @@ background-color: #4E0DA0
   padding: 0 5vw 0 5vw;
   align-items: center;
   margin-top: 3vh;
+}
+
+.setaEsquerdaPerfil{
+    cursor: pointer;
+}
+
+.setaDireitaPerfil{
+    cursor: pointer;
 }
 
 .conjuntotexto {
@@ -828,20 +965,35 @@ background-color: #4E0DA0
     background-color: #D9D9D9;
 }
 
-.perfisdevs {
-       display: grid;
-    grid-template-columns: repeat(4, 20vw);
-    justify-content: space-between;
-   margin-top: 10vh;
-   padding: 0 7vw 0 7vw;
-   
+  .perfisdevs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 10vh;
+}
+
+.containerperfis {
+    width: 89vw;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.wrapperperfis {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3vw;
+    width: max-content;
+    transition: transform 0.5s ease;
 }
 
 .perfil {
-    background-color: #8D0991;
-      height: 50vh;
+    height: 50vh;
+    width: 20vw;
     background-color: #F2F2F2;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .wrapperperfil {
@@ -890,31 +1042,29 @@ background-color: #4E0DA0
 
 .barras {
     display: flex;
-    justify-content: center;  
-    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    margin-top: 4vh;
 }
 
-.barras :first-child {
-     height: 1.5vh;
+.barra {
     width: 10vw;
-    background-color: #828282;
-    border-radius: 10px;
-margin: 5vh 0 10vh 0;
+    height: 2vh;
+    border-radius: 20px;
+    background-color: #DCDCDC;
+}
+
+.barra.ativo {
+    background-color: #888888;
 }
 
 
 
-.barrabarrabarra {
-    height: 1.5vh;
-    width: 10vw;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-margin: 5vh 0 5vh 0;
-}
 
 footer {
      background: linear-gradient(to bottom, #FFFFFF, #8D0991, #8D0991);
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     position: absolute;
 }
@@ -951,6 +1101,7 @@ footer {
      gap: 2vh;
       font-family: 'Mada', sans-serif;
       color: #8D0991;
+      cursor: pointer;
 }
 
 .botaocontato img{
@@ -962,6 +1113,9 @@ footer {
     gap: 5vw;
       font-family: 'Anek Malayalam', sans-serif;
       color: white;
+      display: flex;
+      justify-content: center;
+      margin-top: 10vh;
      
 }
 
@@ -972,24 +1126,51 @@ align-items: center;
 }
 
 
-.wrapperret1 {
-    display: flex;
-    align-items: center;
-}
+
+
+
 
 .retangulofooter1 p {
     width: 20vw;
     text-align: justify;
-   font-family: 'Anek Malayalam', sans-serif;
-   font-weight: 600;
-   color: white;
-   font-size: 3vh;
+    font-family: 'Anek Malayalam', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 3vh;
+    margin-top: 2vh;
 }
+
+.logoiperene2 {
+    margin: 0;
+}
+
+
+
+
+.logoiperene2 img {
+    display: block;
+    max-width: 100%;
+}
+
 
 .retangulofooter2 .wrapperret1 {
     flex-direction: column;
     display: flex;
 }
+
+.retangulofooter2 h1 {
+    margin-top: 1.5vh;
+    margin-bottom: 5vh;
+}
+
+.logoiperene1{
+  display: flex;
+  height: 15vh;
+margin-left: 2vw;
+position: absolute;
+margin-top: 5.5vh;
+}
+
 
 .topicos {
     font-size: 2vh;
@@ -998,7 +1179,8 @@ align-items: center;
 
 .retangulofooter3 {
    display: flex;
-   align-items: center; 
+  margin-top: 1.5vh;
+ 
 }
 
 .wrapperret3 {
@@ -1007,7 +1189,170 @@ align-items: center;
     align-items: center;
 }
 
+.wrapperret3 h1 {
+    margin-bottom: 5vh;
+}
+
 .wrapperret3 p {
         width: 8vw;
         font-size: 3vh;
+        width: 15vw;
+        text-align: center;
+}
+
+
+.wrapperret4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.wrapperret4 p {
+    font-size: 3vh;
+    width: 22vw;
+    text-align: center;
+}
+
+
+.wrapperret4p:nth-of-type(2) {
+    text-align: center;
+}
+
+.wrapperret4 h1 {
+    margin-top: 1.5vh;
+}
+
+.direitosreservados {
+    text-align: center;
+    font-family: in;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-weight: 100;
+    margin-top: 5vh;
+}
+
+/* DEIXANDO MODO NOITE
+
+/* ========================= */
+/*       MODO ESCURO         */
+/* ========================= */
+
+.modo-noite {
+    background-color: #0B0012;
+    color: white;
+}
+
+.modo-noite .retanguloheader {
+    background-color: #0B0012;
+}
+
+.modo-noite .iperene {
+    color: #CC0581;
+}
+
+.modo-noite .textoproject span {
+    color: #CC0581;
+}
+
+
+
+.modo-noite .textoexperiencia span {
+    color: #CC0581;
+}
+
+.modo-noite .textogameficados span {
+    color: #CC0581;
+}
+
+.modo-noite .textosatisfacao span {
+    color: #CC0581;
+}
+
+.modo-noite .barrinha {
+    background-color: #CC0581;
+}
+
+.modo-noite .retangulosessao {
+    background-color: #8D0991;
+}
+
+.modo-noite .titulosessao{
+    color: #FEDFFF;
+}
+
+.modo-noite .card {
+    background-color: #18072E;
+}
+
+.modo-noite .circulos {
+    background-color: #4E0DA0;
+}
+
+
+.modo-noite .linha6 {
+    background-color: #4E0DA0;
+}
+.modo-noite .linha4 {
+    background-color: #6d04ed;
+}
+
+.modo-noite .linha5 {
+    background-color: #4E0DA0;;
+}
+
+.modo-noite .cardzin {
+    background-color: #18072E;
+}
+
+.modo-noite .retanguloscarrossel {
+    background-color: #5B0BB5;
+}
+
+.modo-noite .retanguloscarrossel.ativo {
+    background-color: #DFCAFA;
+}
+
+
+.modo-noite .cardavaliacao {
+     background-color: #18072E;
+}
+
+.modo-noite .bolinhacomletra {
+    background-color: #4E0DA0;
+}
+
+.modo-noite .bolinhacomletra h1 {
+    color: #DFCAFA;
+}
+
+.modo-noite .perfil {
+    background-color: #18072E; 
+}
+
+.modo-noite footer {
+     background: linear-gradient(to bottom, #0B0012, #4E0DA0, #4E0DA0);
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+}
+
+.modo-noite .retanguloscarrossel2 {
+    background-color: #4E0DA0;
+}
+
+.modo-noite .retanguloscarrossel2.ativo {
+    background-color: #DFCAFA;
+}
+
+.modo-noite .retanguloimperene {
+    padding-top: 7vh;
+    height: 15vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2vh;
 }
