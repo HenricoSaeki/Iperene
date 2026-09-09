@@ -216,7 +216,11 @@ function modoNoite() {
 
     document.body.classList.toggle("modo-noite");
 
+  const SetaEsquerdaAvaliacao = 
+        document.querySelector(".setaAvaliacaoEsquerda")
 
+        const SetaDireitaAvaliacao =
+        document.querySelector(".setaAvaliacaoDireita")
     // =========================
     // ELEMENTOS
     // =========================
@@ -272,11 +276,18 @@ function modoNoite() {
         document.getElementById("logoHeader");
 
 
+      
+
     // =========================
     // MODO NOITE
     // =========================
 
     if (document.body.classList.contains("modo-noite")) {
+
+
+        SetaEsquerdaAvaliacao.src = "img/setaesquerdanoite.png";
+        SetaDireitaAvaliacao.src = "img/setadireitanoitecerto.png";
+
 
         qualidade.src =
             "img/certificadonoite.png";
@@ -298,6 +309,8 @@ function modoNoite() {
 
         tema.src =
             "img/imagem sol.png";
+tema.style.height = "4vh";
+
 
 
         // Missão, visão e valores

@@ -611,6 +611,8 @@ font-family: 'Mada', sans-serif;
     overflow: hidden;
 }
 
+
+
 .imagemservico .img1 {
     display: block;
 }
@@ -640,13 +642,18 @@ font-family: 'Mada', sans-serif;
     transition: opacity 0.3s ease;
 }
 
-.imagemservico:hover .textohover {
-    opacity: 1;
+.textohover p{
+     font-family: 'Mada', sans-serif;
 }
 
 .imagemservico:hover .textohover {
     opacity: 1;
 }
+
+.wrapperimagens:has(.imagemservico:hover) .titletext {
+    color: #000000;
+}
+
 
 .number {
      font-family: 'Anek Malayalam';
@@ -746,11 +753,13 @@ cursor: pointer;
 
 .setaAvaliacaoEsquerda {
     cursor: pointer;
+    margin-right: 2vw;
 }
 
 
 .setaAvaliacaoDireita {
 cursor: pointer;
+ margin-left: 2vw;
 }
 
 
@@ -802,7 +811,10 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
+
+
 
 
 /* JANELA DO CARROSSEL */
@@ -1064,7 +1076,7 @@ cursor: pointer;
 
 footer {
      background: linear-gradient(to bottom, #FFFFFF, #8D0991, #8D0991);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
 }
@@ -1332,7 +1344,7 @@ margin-top: 5.5vh;
 
 .modo-noite footer {
      background: linear-gradient(to bottom, #0B0012, #4E0DA0, #4E0DA0);
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     position: absolute;
 }
@@ -1355,4 +1367,37 @@ margin-top: 5.5vh;
     justify-content: center;
     align-items: center;
     margin-top: -2vh;
+}
+
+.modo-noite .estatisticas     {
+ width: 100%;
+    height: 20vh;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Anek Malayalam', sans-serif;
+    gap: 10vw;
+    align-items: center;
+}
+
+  .modo-noite .barrinha {
+      border-top: solid rgb(255, 255, 255) 1px;
+  margin-top: 5vh;
+  }
+
+
+.modo-noite .setaAvaliacaoEsquerda {
+cursor: pointer;
+ margin-left: 2vw;
+
+}
+
+
+.modo-noite .setaAvaliacaoDireita {
+cursor: pointer;
+ margin-left: 2vw;
+}
+
+.modo-noite .wrapperimagens:has(.imagemservico:hover) .titletext {
+    color: #f8f6f6;
 }
