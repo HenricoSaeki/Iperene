@@ -378,6 +378,12 @@ tema.style.height = "4vh";
 
         });
 
+        SetaEsquerdaAvaliacao.src="img/setaesquerdadia.png";
+        SetaDireitaAvaliacao.src="img/setadireitadia.png";
+
+        
+     
+
 
         // LinkedIn
 

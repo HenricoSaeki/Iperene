@@ -597,6 +597,10 @@ font-family: 'Mada', sans-serif;
     align-items: center;
 }
 
+.wrapperimagens img {
+    height: 47vh;
+}
+
 .barraroxavertical {
     width: 1vw;
     height: 340px;
@@ -1168,6 +1172,7 @@ align-items: center;
 .retangulofooter2 .wrapperret1 {
     flex-direction: column;
     display: flex;
+    text-align: center;
 }
 
 .retangulofooter2 h1 {
@@ -1177,10 +1182,9 @@ align-items: center;
 
 .logoiperene1{
   display: flex;
-  height: 15vh;
+  height: 9vh;
 margin-left: 2vw;
 position: absolute;
-margin-top: 5.5vh;
 }
 
 
@@ -1358,21 +1362,20 @@ margin-top: 5.5vh;
 }
 
 .modo-noite .retanguloimperene {
-    padding-top: 7vh;
-    height: 15vh;
+    height: 12vh;
     width: 20vw;
     background-color: white;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -2vh;
+
 }
 
 .modo-noite .estatisticas     {
  width: 100%;
     height: 20vh;
-    border-bottom: solid rgb(255, 255, 255) 1px;
+    border-bottom: solid white 1px;
     display: flex;
     justify-content: center;
     font-family: 'Anek Malayalam', sans-serif;
@@ -1400,4 +1403,653 @@ cursor: pointer;
 
 .modo-noite .wrapperimagens:has(.imagemservico:hover) .titletext {
     color: #f8f6f6;
+}
+
+@media (max-width: 1366px) {
+
+.retangulosessao {
+    width: auto;
+    min-width: 13vw;
+    padding: 0 24px;
+}
+
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1366px) {
+
+.cardzin h1 {
+    font-size: 22px;
+}
+
+}
+
+
+
+@media (max-width: 1024px) {
+
+header {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 6vh;
+}
+
+.retanguloheader {
+    width: 100%;
+}
+
+.cabecarioprincipal {
+    width: 96%;
+}
+
+.estatisticas {
+    height: auto;
+    padding: 20px 0;
+}
+
+.card {
+    height: auto;
+    min-height: 24vh;
+    padding-bottom: 20px;
+}
+
+.cardzin {
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.cardavaliacao {
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.perfil {
+    height: auto;
+    padding-bottom: 16px;
+}
+
+.legendas li {
+    font-size: 14px;
+}
+
+.textoeimagem2 {
+    width: 100%;
+}
+
+.textmission {
+    width: auto;
+    padding-right: 20px;
+}
+
+.retangulofooter1 p,
+.retangulofooter2 p,
+.wrapperret3 p,
+.wrapperret4 p {
+    overflow-wrap: break-word;
+}
+
+footer {
+    position: relative;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+.modo-noite footer {
+    position: relative;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+
+.retanguloheader {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.logoiperene1 {
+    position: static;
+    margin-left: 0;
+}
+
+.legendas {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.legendas li {
+    font-size: 16px;
+}
+
+.lua {
+    height: 24px;
+    margin-left: 0;
+}
+
+.adaptflore {
+    font-size: 34px;
+}
+
+.textoiperene {
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.portcontact {
+    flex-wrap: wrap;
+}
+
+.retanguloport {
+    width: auto;
+    padding: 0 20px;
+}
+
+.retangulocontact {
+    width: auto;
+    padding: 0 20px;
+}
+
+.projetosconclu {
+    width: auto;
+    padding: 0 16px;
+}
+
+.estatisticas {
+    flex-wrap: wrap;
+    gap: 20px 6vw;
+}
+
+.estatisticas h1 {
+    width: 35vw;
+}
+
+.textosessao {
+    text-align: center;
+    padding: 0 5vw;
+}
+
+.textoeimagem {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.textoeimagem2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.containerequipe {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.triplecards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.textosomos1 {
+    width: 90vw;
+}
+
+.textosomos2 {
+    width: 90vw;
+}
+
+.textoplaytime {
+    width: 90vw;
+}
+
+.imgsomos {
+    width: 90vw;
+    height: auto;
+}
+
+.card {
+    width: 90vw;
+}
+
+.wrapperbolinhas {
+    display: none;
+}
+
+.retangulocards {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardzin {
+    width: 80vw;
+}
+
+.cardzin p {
+    width: 70vw;
+}
+
+.retanguloimagens123 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.barraroxavertical {
+    display: none;
+}
+
+.img1 {
+    width: 80vw;
+    height: auto;
+}
+
+.textohover {
+    font-size: 16px;
+    padding: 16px;
+}
+
+.wrapperprapornadireita {
+    align-items: center;
+}
+
+.containerimagem {
+    width: 90vw;
+    height: auto;
+}
+
+.imagenscarrossel img {
+    width: 90vw;
+    height: auto;
+}
+
+.containercards-avaliacao {
+    width: 260px;
+}
+
+.cardavaliacao {
+    width: 260px;
+    padding: 20px;
+}
+
+.opiniao {
+    width: auto;
+    letter-spacing: 0;
+    margin-top: 0;
+}
+
+.bolinhacomletra {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.cargoperson {
+    width: auto;
+}
+
+.setaAvaliacaoEsquerda {
+    width: 24px;
+}
+
+.setaAvaliacaoDireita {
+    width: 24px;
+}
+
+.setaEsquerdaPerfil {
+    width: 24px;
+}
+
+.setaDireitaPerfil {
+    width: 24px;
+}
+
+.containerperfis {
+    width: 250px;
+}
+
+.perfil {
+    width: 250px;
+}
+
+.wrapperperfil h2 {
+    width: auto;
+    padding: 0 10px;
+}
+
+.tituloequipe {
+    width: auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+.textoequipe {
+    width: 90vw;
+}
+
+.retanuglosla {
+    width: 90vw;
+    height: 200px;
+}
+
+.botaocontato {
+    width: auto;
+    padding: 0 20px;
+}
+
+.botaocontato h1 {
+    font-size: 16px;
+}
+
+.containerfooterbaixo {
+    flex-direction: column;
+    align-items: center;
+}
+
+.retangulofooter1 p,
+.retangulofooter2 p,
+.wrapperret3 p,
+.wrapperret4 p {
+    width: 80vw;
+}
+
+.modo-noite .retanguloimperene {
+    width: auto;
+    height: auto;
+    padding: 16px 24px;
+    margin-top: 0;
+}
+
+.modo-noite .wrappercimaparte {
+    margin-top: 30vh;
+}
+
+
+
+@media (max-width: 500px) {
+
+.retanguloheader {
+    height: auto;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.logoiperene1 {
+    position: static;
+    margin-left: 0;
+    
+}
+
+.legendas {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.legendas li {
+    font-size: 16px;
+}
+
+.lua {
+    height: 24px;
+    margin-left: 0;
+}
+
+.adaptflore {
+    font-size: 34px;
+}
+
+.textoiperene {
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.portcontact {
+    flex-wrap: wrap;
+}
+
+.retanguloport {
+    width: auto;
+    padding: 0 20px;
+}
+
+.retangulocontact {
+    width: auto;
+    padding: 0 20px;
+}
+
+.projetosconclu {
+    width: auto;
+    padding: 0 16px;
+}
+
+.estatisticas {
+    flex-wrap: wrap;
+    gap: 20px 6vw;
+}
+
+.estatisticas h1 {
+    width: 35vw;
+}
+
+
+
+
+
+
+.textosessao {
+    text-align: center;
+    padding: 0 5vw;
+}
+
+.textoeimagem {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.textoeimagem2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.containerequipe {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.triplecards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapperimagens img {
+ height: 30vh;
+}
+
+.textosomos1 {
+    width: 90vw;
+}
+
+.textosomos2 {
+    width: 90vw;
+}
+
+.textoplaytime {
+    width: 90vw;
+}
+
+.imgsomos {
+    width: 90vw;
+    height: auto;
+}
+
+.card {
+    width: 90vw;
+}
+
+.wrapperbolinhas {
+    display: none;
+}
+
+.retangulocards {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardzin {
+    width: 80vw;
+}
+
+.cardzin p {
+    width: 70vw;
+}
+
+.retanguloimagens123 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.barraroxavertical {
+    display: none;
+}
+
+.img1 {
+    width: 80vw;
+    height: auto;
+}
+
+.textohover {
+    font-size: 16px;
+    padding: 16px;
+}
+
+.wrapperprapornadireita {
+    align-items: center;
+}
+
+.containerimagem {
+    width: 90vw;
+    height: auto;
+}
+
+.imagenscarrossel img {
+    width: 90vw;
+    height: auto;
+}
+
+.containercards-avaliacao {
+    width: 260px;
+}
+
+.cardavaliacao {
+    width: 260px;
+    padding: 20px;
+}
+
+.opiniao {
+    width: auto;
+    letter-spacing: 0;
+    margin-top: 0;
+}
+
+.bolinhacomletra {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.cargoperson {
+    width: auto;
+}
+
+.setaAvaliacaoEsquerda {
+    width: 24px;
+}
+
+.setaAvaliacaoDireita {
+    width: 24px;
+}
+
+.setaEsquerdaPerfil {
+    width: 24px;
+}
+
+.setaDireitaPerfil {
+    width: 24px;
+}
+
+.containerperfis {
+    width: 250px;
+}
+
+.perfil {
+    width: 250px;
+}
+
+.wrapperperfil h2 {
+    width: auto;
+    padding: 0 10px;
+}
+
+.tituloequipe {
+    width: auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+.textoequipe {
+    width: 90vw;
+}
+
+.retanuglosla {
+    width: 90vw;
+    height: 200px;
+}
+
+.botaocontato {
+    width: auto;
+    padding: 0 20px;
+}
+
+.botaocontato h1 {
+    font-size: 30px;
+}
+
+.containerfooterbaixo {
+    flex-direction: column;
+    align-items: center;
+}
+
+.retangulofooter1 p,
+.retangulofooter2 p,
+.wrapperret3 p,
+.wrapperret4 p {
+    width: 80vw;
+}
+
+.modo-noite .retanguloimperene {
+    width: auto;
+    height: auto;
+    padding: 16px 24px;
+    margin-top: 0;
+}
+
+}
 }
