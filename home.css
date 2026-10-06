@@ -1343,7 +1343,19 @@ position: absolute;
 }
 
 .modo-noite .perfil {
-    background-color: #18072E; 
+    background-color: #18072E;
+}
+
+.modo-noite .wrapperperfil h2 {
+    color: #DFCAFA;
+}
+
+.modo-noite .wrapperperfil h3:first-of-type {
+    color: #DFCAFA;
+}
+
+.modo-noite .wrapperperfil h3:nth-of-type(2) {
+    color: #E6E6E6;
 }
 
 .modo-noite footer {
@@ -1372,15 +1384,8 @@ position: absolute;
 
 }
 
-.modo-noite .estatisticas     {
- width: 100%;
-    height: 20vh;
+.modo-noite .estatisticas {
     border-bottom: solid white 1px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Anek Malayalam', sans-serif;
-    gap: 10vw;
-    align-items: center;
 }
 
   .modo-noite .barrinha {
@@ -1570,7 +1575,8 @@ footer {
 }
 
 .estatisticas h1 {
-    width: 35vw;
+    width: 40vw;
+    font-size: 20px;
 }
 
 .textosessao {
@@ -1770,10 +1776,14 @@ footer {
     margin-top: 0;
 }
 
-.modo-noite .wrappercimaparte {
-    margin-top: 30vh;
+.wrapperperfil h3 {
+    padding: 0 10px;
 }
 
+.titulofooter {
+    font-size: 40px;
+    text-align: center;
+}
 
 
 @media (max-width: 500px) {
@@ -1842,7 +1852,8 @@ footer {
 }
 
 .estatisticas h1 {
-    width: 35vw;
+    width: 40vw;
+    font-size: 20px;
 }
 
 

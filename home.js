@@ -1,5 +1,5 @@
 // =========================
-// CARROSSEL PRINCIPAL
+// CARROSSEL PRINCIPAL (Playtime)
 // =========================
 
 let index = 0;
@@ -8,7 +8,10 @@ const imagens = document.querySelector(".imagenscarrossel");
 const indicadores = document.querySelectorAll(".retanguloscarrossel");
 
 function atualizarCarrossel() {
-    imagens.style.transform = `translateX(-${index * 803}px)`;
+    // usa a largura real da imagem em px (antes era 42.5vw fixo)
+    const largura = imagens.querySelector("img").offsetWidth;
+
+    imagens.style.transform = `translateX(-${index * largura}px)`;
 
     indicadores.forEach(indicador => {
         indicador.classList.remove("ativo");
@@ -45,83 +48,64 @@ atualizarCarrossel();
 // =========================
 
 let indexAvaliacao = 0;
+let cardsPorPagina = 3;
+let totalPaginas = 1;
 
-const cardsAvaliacao =
-    document.querySelector(".wrappercards-avaliacao");
-
-const todosCards =
-    document.querySelectorAll(".cardavaliacao");
-
-const indicadoresContainer =
-    document.querySelector(".wrapperretanguloscarrossel2");
-
-const cardsPorPagina = 3;
-
-const totalPaginas =
-    Math.ceil(todosCards.length / cardsPorPagina);
-
-
-// Criar indicadores
-
-for (let i = 0; i < totalPaginas; i++) {
-
-    const indicador = document.createElement("div");
-
-    indicador.classList.add("retanguloscarrossel2");
-
-    indicadoresContainer.appendChild(indicador);
-}
-
-const indicadoresAvaliacao =
-    document.querySelectorAll(
-        ".wrapperretanguloscarrossel2 .retanguloscarrossel2"
-    );
-
-
-// Atualizar cards
+const cardsAvaliacao = document.querySelector(".wrappercards-avaliacao");
+const janelaAvaliacao = document.querySelector(".containercards-avaliacao");
+const todosCards = document.querySelectorAll(".cardavaliacao");
+const indicadoresContainer = document.querySelector(".wrapperretanguloscarrossel2");
 
 function atualizarCards() {
 
-    const card = todosCards[0];
+    const gap = parseFloat(getComputedStyle(cardsAvaliacao).columnGap) || 0;
+    const passo = todosCards[0].offsetWidth + gap;
 
-    const gap =
-        parseFloat(getComputedStyle(cardsAvaliacao).gap);
+    // quantos cards cabem na janela agora (3 no desktop, 2 no tablet, 1 no celular)
+    cardsPorPagina = Math.max(
+        1,
+        Math.round((janelaAvaliacao.offsetWidth + gap) / passo)
+    );
 
-    const deslocamento =
-        (card.offsetWidth * 3) + (gap * 3);
+    totalPaginas = Math.ceil(todosCards.length / cardsPorPagina);
 
-    cardsAvaliacao.style.transform =
-        `translateX(-${indexAvaliacao * deslocamento}px)`;
+    if (indexAvaliacao > totalPaginas - 1) {
+        indexAvaliacao = totalPaginas - 1;
+    }
 
-    indicadoresAvaliacao.forEach(indicador => {
-        indicador.classList.remove("ativo");
-    });
+    // recria os indicadores (a quantidade muda conforme a tela)
+    indicadoresContainer.innerHTML = "";
 
-    indicadoresAvaliacao[indexAvaliacao].classList.add("ativo");
+    for (let i = 0; i < totalPaginas; i++) {
+        const indicador = document.createElement("div");
+        indicador.classList.add("retanguloscarrossel2");
+
+        if (i === indexAvaliacao) {
+            indicador.classList.add("ativo");
+        }
+
+        indicadoresContainer.appendChild(indicador);
+    }
+
+    // não deixa passar do último card (evita espaço vazio no fim)
+    const maximo = Math.max(0, cardsAvaliacao.offsetWidth - janelaAvaliacao.offsetWidth);
+    const deslocamento = Math.min(indexAvaliacao * cardsPorPagina * passo, maximo);
+
+    cardsAvaliacao.style.transform = `translateX(-${deslocamento}px)`;
 }
-
-
-// Próximo card
 
 function proximoCard() {
 
     if (indexAvaliacao < totalPaginas - 1) {
-
         indexAvaliacao++;
-
         atualizarCards();
     }
 }
 
-
-// Card anterior
-
 function anteriorCard() {
 
     if (indexAvaliacao > 0) {
-
         indexAvaliacao--;
-
         atualizarCards();
     }
 }
@@ -134,78 +118,79 @@ atualizarCards();
 // =========================
 
 let indexPerfil = 0;
+let perfisPorPagina = 4;
+let totalPaginasPerfil = 1;
 
-const perfis =
-    document.querySelector(".wrapperperfis");
-
-const todosPerfis =
-    document.querySelectorAll(".perfil");
-
-const perfisPorPagina = 4;
-
-const totalPaginasPerfil =
-    Math.ceil(todosPerfis.length / perfisPorPagina);
-
-const barrasContainer =
-    document.querySelector(".barras");
-
-
-// Criar barrinhas
-
-for (let i = 0; i < totalPaginasPerfil; i++) {
-
-    const barra = document.createElement("div");
-
-    barra.classList.add("barra");
-
-    barrasContainer.appendChild(barra);
-}
-
-const barrasPerfil =
-    document.querySelectorAll(".barra");
-
-
-// Atualizar perfis
+const perfis = document.querySelector(".wrapperperfis");
+const janelaPerfis = document.querySelector(".containerperfis");
+const todosPerfis = document.querySelectorAll(".perfil");
+const barrasContainer = document.querySelector(".barras");
 
 function atualizarPerfis() {
 
-    perfis.style.transform =
-        `translateX(-${indexPerfil * 92}vw)`;
+    const gap = parseFloat(getComputedStyle(perfis).columnGap) || 0;
+    const passo = todosPerfis[0].offsetWidth + gap;
 
-    barrasPerfil.forEach(barra => {
-        barra.classList.remove("ativo");
-    });
+    // quantos perfis cabem na janela agora (4 no desktop, 2 no tablet, 1 no celular)
+    perfisPorPagina = Math.max(
+        1,
+        Math.round((janelaPerfis.offsetWidth + gap) / passo)
+    );
 
-    barrasPerfil[indexPerfil].classList.add("ativo");
+    totalPaginasPerfil = Math.ceil(todosPerfis.length / perfisPorPagina);
+
+    if (indexPerfil > totalPaginasPerfil - 1) {
+        indexPerfil = totalPaginasPerfil - 1;
+    }
+
+    // recria as barrinhas
+    barrasContainer.innerHTML = "";
+
+    for (let i = 0; i < totalPaginasPerfil; i++) {
+        const barra = document.createElement("div");
+        barra.classList.add("barra");
+
+        if (i === indexPerfil) {
+            barra.classList.add("ativo");
+        }
+
+        barrasContainer.appendChild(barra);
+    }
+
+    const maximo = Math.max(0, perfis.offsetWidth - janelaPerfis.offsetWidth);
+    const deslocamento = Math.min(indexPerfil * perfisPorPagina * passo, maximo);
+
+    perfis.style.transform = `translateX(-${deslocamento}px)`;
 }
-
-
-// Próximo perfil
 
 function proximoPerfil() {
 
     if (indexPerfil < totalPaginasPerfil - 1) {
-
         indexPerfil++;
-
         atualizarPerfis();
     }
 }
 
-
-// Perfil anterior
-
 function anteriorPerfil() {
 
     if (indexPerfil > 0) {
-
         indexPerfil--;
-
         atualizarPerfis();
     }
 }
 
 atualizarPerfis();
+
+
+// =========================
+// RECALCULA AO REDIMENSIONAR / GIRAR A TELA
+// =========================
+
+window.addEventListener("resize", () => {
+    atualizarCarrossel();
+    atualizarCards();
+    atualizarPerfis();
+});
 
 
 // =========================
