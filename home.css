@@ -603,7 +603,7 @@ font-family: 'Mada', sans-serif;
 
 .barraroxavertical {
     width: 1vw;
-    height: 340px;
+    height: 560px;
     background-color: #8D0991;
    transform: translateY(80px);
    
@@ -731,7 +731,7 @@ cursor: pointer;
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-right: 6vw;
+    
 }
 
 
@@ -789,9 +789,8 @@ cursor: pointer;
 .wrapperprapornadireita {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    padding-right: 10v;
-    justify-content: center;
+  
+    align-items: center;
 }
 
 
@@ -976,7 +975,7 @@ cursor: pointer;
 
 
 .retanuglosla {
-    height: 50vh;
+    height: 60vh;
     width: 40vw;
     background-color: #D9D9D9;
 }
@@ -1786,7 +1785,7 @@ footer {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 625px) {
 
 .retanguloheader {
     height: auto;
@@ -1952,6 +1951,9 @@ footer {
 }
 
 .wrapperprapornadireita {
+     display: flex;
+    flex-direction: column;
+  
     align-items: center;
 }
 
@@ -1966,11 +1968,13 @@ footer {
 }
 
 .containercards-avaliacao {
-    width: 260px;
+    width: 300px;
 }
 
+
+
 .cardavaliacao {
-    width: 260px;
+    width: 300px;
     padding: 20px;
 }
 
@@ -2007,11 +2011,19 @@ footer {
 }
 
 .containerperfis {
-    width: 250px;
+    width: 300px;
+}
+
+.perfisdevs{
+margin: 0;
 }
 
 .perfil {
-    width: 250px;
+    width: 300px;
+}
+
+.fotoperfil {
+height: 21.5vh;
 }
 
 .wrapperperfil h2 {
@@ -2031,7 +2043,8 @@ footer {
 
 .retanuglosla {
     width: 90vw;
-    height: 200px;
+    height: 450px;
+    margin-bottom: 5vh;
 }
 
 .botaocontato {
@@ -2041,6 +2054,14 @@ footer {
 
 .botaocontato h1 {
     font-size: 30px;
+}
+
+.titulofooter {
+    font-size: 5.5vh;
+}
+
+.subtitulofooter {
+    font-size: 3vh;
 }
 
 .containerfooterbaixo {
