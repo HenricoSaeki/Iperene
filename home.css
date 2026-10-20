@@ -157,7 +157,7 @@ header {
 }
 
 .retanguloport {
-    height: 4.5vh;
+    min-height: 4.5vh;
     width: 13vw;
     background-color: #8D0991;
     border-radius: 10px;
@@ -183,7 +183,7 @@ header {
 
 
 .retangulocontact {
-     height: 4.5vh;
+     min-height: 4.5vh;
     width: 13vw;
     background-color: #8D0991;
     border-radius: 10px;
@@ -199,7 +199,7 @@ header {
 
 .projetosconclu {
    background-color: rgba(63, 63, 63, 0.3);
-    height: 4.7vh;
+    min-height: 4.7vh;
     width: 17vw;
     margin-top: 4vh;
     border-radius: 10vh;
@@ -396,10 +396,12 @@ justify-content: center;
 
 .card {
     width: 22vw;
-    height: 24vh;
+    min-height: 24vh;
     background-color: #4E0DA0;
     border-radius: 2vh;
    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 20px;
      background: white;
     border-radius: 20px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
@@ -479,8 +481,10 @@ gap: 3vh;
 }
 
 .retangulosessao {
-    height: 5vh;
-    width: 9vw;
+    min-height: 5vh;
+    width: auto;
+    min-width: 9vw;
+    padding: 0 24px;
     border-radius: 5vh;
     background-color: #FEDFFF;
     color: #8D0991;
@@ -580,7 +584,7 @@ height: 2vh;
 
 
 .cardzin {
-       height: 20vw;
+       min-height: 20vw;
     width: 15vw;
    display: flex;
    flex-direction: column;
@@ -888,7 +892,7 @@ cursor: pointer;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
 
-    height: 37vh;
+    min-height: 37vh;
     width: 25vw;
 
     display: flex;
@@ -1045,7 +1049,7 @@ cursor: pointer;
 }
 
 .perfil {
-    height: 50vh;
+    min-height: 50vh;
     width: 20vw;
     background-color: #F2F2F2;
     border-radius: 10px;
@@ -1147,7 +1151,7 @@ footer {
 
 .botaocontato {
     display: flex;
-    height: 5vh;
+    min-height: 5vh;
     width: 20vw;
     background-color: white;
     justify-content: center;

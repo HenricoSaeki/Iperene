@@ -455,14 +455,14 @@ ScrollReveal().reveal('.cardzin', {
     opacity: 0
 });
 
-ScrollReveal().reveal('.cardavaliacao', {
+ScrollReveal().reveal('.containercards-avaliacao', {
     origin: 'bottom',
     distance: '50px',
     duration: 1000,
     opacity: 0
 });
 
-ScrollReveal().reveal('.perfil', {
+ScrollReveal().reveal('.containerperfis', {
     origin: 'bottom',
     distance: '50px',
     duration: 1000,
