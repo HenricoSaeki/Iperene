@@ -433,3 +433,45 @@ tema.style.height = "4vh";
             "img/logoiperenecerta.png";
     }
 }
+
+ScrollReveal().reveal('.retangulosessao', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    opacity: 0
+});
+
+ScrollReveal().reveal('.card', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    opacity: 0
+});
+
+ScrollReveal().reveal('.cardzin', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 2000,
+    opacity: 0
+});
+
+ScrollReveal().reveal('.cardavaliacao', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    opacity: 0
+});
+
+ScrollReveal().reveal('.perfil', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    opacity: 0
+});
+
+ScrollReveal().reveal('.titulofooter', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    opacity: 0
+});

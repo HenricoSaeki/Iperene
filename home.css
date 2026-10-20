@@ -121,8 +121,9 @@ header {
 
 .cabecarioprincipal {
     margin-left: 4vw;
-    width: 100vw;
+    width: 96%;
     margin-top: 9vh;
+  
 }
 
 .adaptflore{
@@ -225,6 +226,17 @@ header {
     width: 47vw;
     background-color: #8D0991;
     margin-top: 3vh;
+     animation: linhaCresce1 2s ease-in-out infinite;
+}
+
+@keyframes linhaCresce1 {
+    0%, 100% {
+        width: 100px;
+    }
+
+    50% {
+        width: 1000px;
+    }
 }
 
 .linha2 {
@@ -232,6 +244,17 @@ header {
     width: 20vw;
     background-color: #4E0DA0;
     margin-top: 2vh;
+     animation: linhaCresce2 2s ease-in-out infinite;
+}
+
+@keyframes linhaCresce2 {
+    0%, 100% {
+        width: 100px;
+    }
+
+    50% {
+        width: 600px;
+    }
 }
 
 .linha3 {
@@ -239,8 +262,19 @@ header {
     width: 35vw;
     background-color: #FF009F;
     margin-top: 2vh;
+     animation: linhaCresce3 2s ease-in-out infinite;
 }
 
+
+@keyframes linhaCresce3 {
+    0%, 100% {
+        width: 100px;
+    }
+
+    50% {
+        width: 400px;
+    }
+}
 /*MAIN COMEÇA AQUI*/
 
 .estatisticas {
@@ -252,6 +286,11 @@ header {
     font-family: 'Anek Malayalam', sans-serif;
     gap: 10vw;
     align-items: center;
+}
+
+.estatisticas h1 {
+    width: auto;
+    font-size: clamp(14px, 1.4vw, 32px);
 }
 
 .textoproject {
@@ -349,9 +388,9 @@ justify-content: center;
 .triplecards {
   margin-top: 5vh;
  display: flex;
- justify-content: space-between;
- padding-left: 4vw;
- padding-right: 4vw;
+gap: 5vw;
+
+justify-content: center;
   
 }
 
@@ -413,6 +452,17 @@ justify-content: center;
     width: 25vw;
     background-color: #8D0991;
     margin-top: 3vh;
+     animation: crescerDiminuir 2s ease-in-out infinite;
+}
+
+@keyframes crescerDiminuir {
+    0%, 100% {
+        transform: scaleX(0.3);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
 }
 
 .cimaparte {
@@ -580,45 +630,41 @@ font-family: 'Mada', sans-serif;
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    
-    
+    border-bottom: 10px solid #8D0991;
 }
 
 .servico {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 0;
+    flex: 1;
+    min-width: 0;
 }
 
 .wrapperimagens{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .wrapperimagens img {
-    height: 47vh;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.barraroxavertical {
-    width: 1vw;
-    height: 560px;
-    background-color: #8D0991;
-   transform: translateY(80px);
-   
+.servico:not(:last-child) .imagemservico {
+    border-right: 10px solid #8D0991;
 }
 
 .imagemservico {
     position: relative;
     display: inline-block;
     overflow: hidden;
-}
-
-
-
-.imagemservico .img1 {
-    display: block;
+    width: 100%;
+    aspect-ratio: 7 / 5;
 }
 
 .textohover {
@@ -637,10 +683,10 @@ font-family: 'Mada', sans-serif;
 
     text-align: center;
     box-sizing: border-box;
-    padding: 2vw;
+    padding: 1vw;
 
     color: white;
-    font-size: 1.3vw;
+    font-size: clamp(12px, 1.3vw, 18px);
 
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -667,16 +713,10 @@ font-family: 'Mada', sans-serif;
 .titletext {
 font-family: 'Anek Malayalam';
     color: #888888;
+    font-size: clamp(16px, 1.6vw, 24px);
 }
 
-.barraroxahorizontal {
-    height: 1vh;
-    background-color: #8D0991;
-    margin-top: 8.8vh;
-    margin: 0;
-    width: 100%;
-    margin: 0 auto;
-}
+
 
 .textoeimagem2 {
     width: 100%;
@@ -736,8 +776,8 @@ cursor: pointer;
 
 
 .containerimagem {
-    width: 803px;
-    height: 528px;
+    width: min(803px, 56vw);
+    height: auto;
     overflow: hidden;
 }
 
@@ -749,8 +789,9 @@ cursor: pointer;
 }
 
 .imagenscarrossel img {
-    width: 803px;
-    height: 528px;
+    width: min(803px, 56vw);
+    height: auto;
+    aspect-ratio: 803 / 528;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -1121,6 +1162,13 @@ footer {
 
 .botaocontato img{
     height: 6vh;
+}
+
+.retangulofooter1 p,
+.retangulofooter2 p,
+.wrapperret3 p,
+.wrapperret4 p {
+    overflow-wrap: break-word;
 }
 
 .containerfooterbaixo {
@@ -1648,15 +1696,17 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    border-bottom: 10px solid #8D0991;
 }
 
-.barraroxavertical {
-    display: none;
-}
-
-.img1 {
+.servico {
+    flex: none;
     width: 80vw;
-    height: auto;
+    max-width: 420px;
+}
+
+.servico:not(:last-child) .imagemservico {
+    border-right: 0;
 }
 
 .textohover {
@@ -1785,7 +1835,20 @@ footer {
 }
 
 
+}
+
 @media (max-width: 625px) {
+
+.cabecarioprincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-left: 0;
+}
+
+.textoiperene {
+    margin-left: 6vw;
+}
 
 .retanguloheader {
     height: auto;
@@ -1852,7 +1915,7 @@ footer {
 
 .estatisticas h1 {
     width: 40vw;
-    font-size: 20px;
+    font-size: clamp(12px, 4.5vw, 20px);
 }
 
 
@@ -1886,10 +1949,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-}
-
-.wrapperimagens img {
- height: 30vh;
 }
 
 .textosomos1 {
@@ -1936,13 +1995,10 @@ footer {
     gap: 30px;
 }
 
-.barraroxavertical {
-    display: none;
-}
-
-.img1 {
+.servico {
+    flex: none;
     width: 80vw;
-    height: auto;
+    max-width: 420px;
 }
 
 .textohover {
@@ -1968,13 +2024,13 @@ footer {
 }
 
 .containercards-avaliacao {
-    width: 300px;
+    width: min(300px, 70vw);
 }
 
 
 
 .cardavaliacao {
-    width: 300px;
+    width: min(300px, 70vw);
     padding: 20px;
 }
 
@@ -2011,7 +2067,7 @@ footer {
 }
 
 .containerperfis {
-    width: 300px;
+    width: min(300px, 70vw);
 }
 
 .perfisdevs{
@@ -2019,7 +2075,7 @@ margin: 0;
 }
 
 .perfil {
-    width: 300px;
+    width: min(300px, 70vw);
 }
 
 .fotoperfil {
@@ -2083,5 +2139,4 @@ height: 21.5vh;
     margin-top: 0;
 }
 
-}
 }
