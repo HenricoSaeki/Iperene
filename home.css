@@ -1883,7 +1883,7 @@ margin-left: 0;
     }
 
     50% {
-        width: 400px;
+        width: 350px;
     }
 }
 
@@ -1920,7 +1920,7 @@ margin-left: 0;
     }
 
     50% {
-        width: 200px;
+        width: 250px;
     }
 }
 
@@ -1965,17 +1965,30 @@ margin-left: 0;
 }
 
 .portcontact {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  
+
 }
 
 .retanguloport {
-    width: 45vw;
-    padding: 0 20px;
+    width: 50vw;
+    padding: 0 33px;
+   
+  
+}
+
+.retanguloport .port p {
+    font-size: 25px;
 }
 
 .retangulocontact {
-    width: 45vw;
+    width: 50vw;
     padding: 0 20px;
+}
+
+.retanguloport .port p {
+    font-size: 25px;
 }
 
 .projetosconclu {
