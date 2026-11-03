@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 /* HEADER COMEÇA AQUI*/
 body {
     margin: 0;
@@ -211,6 +214,17 @@ header {
    opacity: 90%;
 }
 
+
+li a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+
+li a:hover {
+  opacity: 0.8;
+}
+
 .computa {
     height: 3vh;
 }
@@ -276,6 +290,7 @@ header {
     }
 }
 /*MAIN COMEÇA AQUI*/
+
 
 .estatisticas {
     width: 100%;
@@ -1854,6 +1869,62 @@ margin-left: 0;
     margin-left: 6vw;
 }
 
+.linha1 {
+    height: 0.3vh;
+    width: 47vw;
+    background-color: #8D0991;
+    margin-top: 3vh;
+     animation: linhaCresce1 2s ease-in-out infinite;
+}
+
+@keyframes linhaCresce1 {
+    0%, 100% {
+        width: 100px;
+    }
+
+    50% {
+        width: 400px;
+    }
+}
+
+.linha2 {
+    height: 0.3vh;
+    width: 20vw;
+    background-color: #4E0DA0;
+    margin-top: 2vh;
+     animation: linhaCresce2 2s ease-in-out infinite;
+}
+
+@keyframes linhaCresce2 {
+    0%, 100% {
+        width: 100px;
+    }
+
+    50% {
+        width: 300px;
+    }
+}
+
+.linha3 {
+    height: 0.3vh;
+    width: 35vw;
+    background-color: #FF009F;
+    margin-top: 2vh;
+     animation: linhaCresce3 2s ease-in-out infinite;
+}
+
+
+@keyframes linhaCresce3 {
+    0%, 100% {
+        width: 100px;
+    }
+
+    50% {
+        width: 200px;
+    }
+}
+
+
 .retanguloheader {
     height: auto;
     flex-direction: column;
@@ -1898,12 +1969,12 @@ margin-left: 0;
 }
 
 .retanguloport {
-    width: auto;
+    width: 45vw;
     padding: 0 20px;
 }
 
 .retangulocontact {
-    width: auto;
+    width: 45vw;
     padding: 0 20px;
 }
 
