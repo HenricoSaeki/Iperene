@@ -713,6 +713,7 @@ font-family: 'Mada', sans-serif;
 
 .textohover p{
      font-family: 'Mada', sans-serif;
+     font-size: 30px;
 }
 
 .imagemservico:hover .textohover {
@@ -751,6 +752,23 @@ justify-content: center;
     display: flex;
     flex-direction: column;
   align-items: center;  
+}
+
+.containertextoprojeto {
+    width: 30vw;
+    overflow: hidden;
+}
+
+.textosprojetos {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.textoprojeto {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .playtime {
@@ -945,6 +963,9 @@ cursor: pointer;
     display: flex;
     align-items: center;
     gap: 1vw;
+    margin-top: auto;
+    margin-bottom: 40px;
+ 
 }
 
 .bolinhacomletra {
@@ -1685,6 +1706,10 @@ footer {
     width: 90vw;
 }
 
+.containertextoprojeto {
+    width: 90vw;
+}
+
 .imgsomos {
     width: 90vw;
     height: auto;
@@ -2048,6 +2073,10 @@ margin-left: 0;
 }
 
 .textoplaytime {
+    width: 90vw;
+}
+
+.containertextoprojeto {
     width: 90vw;
 }
 

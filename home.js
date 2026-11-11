@@ -6,12 +6,17 @@ let index = 0;
 
 const imagens = document.querySelector(".imagenscarrossel");
 const indicadores = document.querySelectorAll(".retanguloscarrossel");
+const textosProjetos = document.querySelector(".textosprojetos");
+const janelaTextoProjeto = document.querySelector(".containertextoprojeto");
 
 function atualizarCarrossel() {
     // usa a largura real da imagem em px (antes era 42.5vw fixo)
     const largura = imagens.querySelector("img").offsetWidth;
 
     imagens.style.transform = `translateX(-${index * largura}px)`;
+
+    // o texto do projeto anda junto com a imagem
+    textosProjetos.style.transform = `translateX(-${index * janelaTextoProjeto.offsetWidth}px)`;
 
     indicadores.forEach(indicador => {
         indicador.classList.remove("ativo");
@@ -442,7 +447,7 @@ ScrollReveal().reveal('.retangulosessao', {
 });
 
 ScrollReveal().reveal('.card', {
-    origin: 'bottom',
+    rotate: {x: 100, y: 100, z:0},
     distance: '50px',
     duration: 1000,
     opacity: 0
