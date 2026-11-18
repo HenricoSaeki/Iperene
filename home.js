@@ -474,9 +474,18 @@ ScrollReveal().reveal('.containerperfis', {
     opacity: 0
 });
 
+ScrollReveal().reveal('.containermascote', {
+    origin: 'bottom',
+    distance: '50px',
+    duration: 1000,
+    opacity: 0
+});
+
+
 ScrollReveal().reveal('.titulofooter', {
     origin: 'bottom',
     distance: '50px',
     duration: 1000,
     opacity: 0
 });
+

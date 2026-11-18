@@ -1168,6 +1168,89 @@ cursor: pointer;
 }
 
 
+.cimaparte {
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.wrappercimaparte {
+width: 100%;
+flex-direction: column;
+align-items: center;
+display: flex;
+gap: 3vh;
+}
+
+.retangulomascote {
+    min-height: 5vh;
+    width: auto;
+    min-width: 9vw;
+    padding: 0 24px;
+    border-radius: 5vh;
+    background-color: #FEDFFF;
+    color: #8D0991;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Basic', sans-serif;
+font-weight: normal;
+    margin-top: 3vh;
+}
+
+.titulomascote {
+font-family: 'Basic', sans-serif;
+  font-weight: 500;
+}
+
+.textomascote {
+  font-family: 'Hammersmith One', sans-serif;   
+  font-weight: 100;
+}
+
+.containermascote {
+    display: flex;
+  justify-content: space-between;
+  padding: 0 5vw 0 5vw;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+
+.conjuntotexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 3vh;
+   text-align: justify;
+}
+
+
+.titulomascote {
+    width: 40vw;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 10vh;
+    font-weight: 500;
+    text-align: center;
+}
+
+.textomascote {
+    width: 35vw;
+     font-family: 'Mada', sans-serif;
+      font-size:3vh;
+}
+
+
+
+.fotomascote {
+    border-radius: 15px;
+    height: 70vh;
+    width: 45vw;
+    border: solid rgb(0, 0, 0) 2px;
+    object-fit: cover;
+}
+
+
 
 
 footer {
@@ -1508,6 +1591,17 @@ cursor: pointer;
 .modo-noite .wrapperimagens:has(.imagemservico:hover) .titletext {
     color: #f8f6f6;
 }
+
+.modo-noite .fotomascote {
+    .fotomascote {
+    border-radius: 15px;
+    height: 70vh;
+    width: 45vw;
+   
+    object-fit: cover;
+}
+}
+
 
 @media (max-width: 1366px) {
 
