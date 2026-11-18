@@ -449,7 +449,7 @@ ScrollReveal().reveal('.retangulosessao', {
 ScrollReveal().reveal('.card', {
     rotate: {x: 100, y: 100, z:0},
     distance: '50px',
-    duration: 1000,
+    duration: 1400,
     opacity: 0
 });
 
