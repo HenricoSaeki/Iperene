@@ -827,6 +827,7 @@ cursor: pointer;
 
 .imagenscarrossel img {
     width: min(803px, 56vw);
+
     height: auto;
     aspect-ratio: 803 / 528;
     object-fit: cover;
