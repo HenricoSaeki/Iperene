@@ -225,6 +225,13 @@ li a:hover {
   opacity: 0.8;
 }
 
+/* links de navegação (botões do topo e menu do rodapé) */
+.linkbotao,
+.topicos a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .computa {
     height: 3vh;
 }
@@ -755,7 +762,7 @@ justify-content: center;
 }
 
 .containertextoprojeto {
-    width: 30vw;
+    width: 27vw;
     overflow: hidden;
 }
 
@@ -783,7 +790,7 @@ justify-content: center;
     display: flex;
    text-align: justify;
    margin-top: 3vh;
-   width: 30vw;
+   width: 27vw;
    font-size: 3vh;
 }
 
@@ -812,26 +819,26 @@ cursor: pointer;
 }
 
 
+/* CARROSSEL DE IMAGENS DOS PROJETOS
+   A largura é controlada SOMENTE aqui (.containerimagem).
+   As imagens preenchem 100% da janela. */
 .containerimagem {
-    width: min(803px, 56vw);
+    width: min(1000px, 60vw);
     height: auto;
     overflow: hidden;
 }
 
 .imagenscarrossel {
     display: flex;
-    width: max-content;
-    height: 100%;
+    width: 100%;
     transition: transform 0.5s ease;
 }
 
 .imagenscarrossel img {
-    width: min(803px, 56vw);
-
+    flex: 0 0 100%;
+    width: 100%;
     height: auto;
-    aspect-ratio: 803 / 528;
-    object-fit: cover;
-    flex-shrink: 0;
+    display: block;
 }
 
 .setaAvaliacaoEsquerda {
@@ -1674,6 +1681,21 @@ header {
 
 .textoeimagem2 {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.containertextoprojeto {
+    width: 90vw;
+}
+
+.textoplaytime {
+    width: 90vw;
+}
+
+.containerimagem {
+    width: 90vw;
 }
 
 .textmission {
@@ -1870,11 +1892,6 @@ footer {
 }
 
 .containerimagem {
-    width: 90vw;
-    height: auto;
-}
-
-.imagenscarrossel img {
     width: 90vw;
     height: auto;
 }
@@ -2243,11 +2260,6 @@ margin-left: 0;
 }
 
 .containerimagem {
-    width: 90vw;
-    height: auto;
-}
-
-.imagenscarrossel img {
     width: 90vw;
     height: auto;
 }
