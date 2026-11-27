@@ -74,6 +74,7 @@ header {
 
     height: 100vh;
     width: 100%;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -370,6 +371,12 @@ flex-direction: column;
 align-items: center;
 display: flex;
 gap: 3vh;
+}
+
+.imgsomos {
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .textoeimagem {
@@ -1123,7 +1130,7 @@ cursor: pointer;
     line-height: 1.2;
     min-height: 2.4em;        
     display: flex;
-    align-items: center;      
+    align-items: flex-start;      
     justify-content: center;
     text-align: center;
 }
@@ -1358,6 +1365,14 @@ align-items: center;
     max-width: 100%;
 }
 
+body:not(.modo-noite) .logoiperene2 img {
+    width: 20vw;
+}
+
+.containerfootercima a {
+    text-decoration: none;
+}
+
 
 .retangulofooter2 .wrapperret1 {
     flex-direction: column;
@@ -1368,6 +1383,7 @@ align-items: center;
 .retangulofooter2 h1 {
     margin-top: 1.5vh;
     margin-bottom: 5vh;
+    font-size: min(5vh, 4vw);
 }
 
 .logoiperene1{
@@ -1397,6 +1413,7 @@ position: absolute;
 
 .wrapperret3 h1 {
     margin-bottom: 5vh;
+    font-size: min(5vh, 4vw);
 }
 
 .wrapperret3 p {
@@ -1427,6 +1444,7 @@ position: absolute;
 
 .wrapperret4 h1 {
     margin-top: 1.5vh;
+    font-size: min(5vh, 4vw);
 }
 
 .direitosreservados {
@@ -1703,6 +1721,10 @@ header {
     padding-right: 20px;
 }
 
+.containerperfis {
+    width: calc(100vw - 130px);
+}
+
 .retangulofooter1 p,
 .retangulofooter2 p,
 .wrapperret3 p,
@@ -1970,6 +1992,27 @@ footer {
     border-width: 5px;
 }
 
+.containermascote {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulomascote {
+    width: auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+.textomascote {
+    width: 90vw;
+}
+
+.fotomascote {
+    width: 90vw;
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
 .botaocontato {
     width: auto;
     padding: 0 20px;
@@ -1989,6 +2032,16 @@ footer {
 .wrapperret3 p,
 .wrapperret4 p {
     width: 80vw;
+}
+
+body:not(.modo-noite) .logoiperene2 img {
+    width: 60vw;
+}
+
+.retangulofooter2 h1,
+.wrapperret3 h1,
+.wrapperret4 h1 {
+    font-size: 32px;
 }
 
 .modo-noite .retanguloimperene {
@@ -2376,6 +2429,10 @@ height: 21.5vh;
 .wrapperret3 p,
 .wrapperret4 p {
     width: 80vw;
+}
+
+body:not(.modo-noite) .logoiperene2 img {
+    width: 60vw;
 }
 
 .modo-noite .retanguloimperene {

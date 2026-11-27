@@ -139,7 +139,7 @@ function atualizarPerfis() {
     // quantos perfis cabem na janela agora (4 no desktop, 2 no tablet, 1 no celular)
     perfisPorPagina = Math.max(
         1,
-        Math.round((janelaPerfis.offsetWidth + gap) / passo)
+        Math.floor((janelaPerfis.offsetWidth + gap) / passo + 0.05)
     );
 
     totalPaginasPerfil = Math.ceil(todosPerfis.length / perfisPorPagina);
@@ -162,8 +162,24 @@ function atualizarPerfis() {
         barrasContainer.appendChild(barra);
     }
 
-    const maximo = Math.max(0, perfis.offsetWidth - janelaPerfis.offsetWidth);
-    const deslocamento = Math.min(indexPerfil * perfisPorPagina * passo, maximo);
+    // iguala a altura dos nomes: todos ficam do tamanho do nome mais comprido
+    const nomesPerfis = document.querySelectorAll(".wrapperperfil h2");
+
+    nomesPerfis.forEach(nome => {
+        nome.style.minHeight = "";
+    });
+
+    let alturaNome = 0;
+
+    nomesPerfis.forEach(nome => {
+        alturaNome = Math.max(alturaNome, nome.offsetHeight);
+    });
+
+    nomesPerfis.forEach(nome => {
+        nome.style.minHeight = alturaNome + "px";
+    });
+
+    const deslocamento = indexPerfil * perfisPorPagina * passo;
 
     perfis.style.transform = `translateX(-${deslocamento}px)`;
 }
@@ -190,6 +206,8 @@ atualizarPerfis();
 // =========================
 // RECALCULA AO REDIMENSIONAR / GIRAR A TELA
 // =========================
+
+window.addEventListener("load", atualizarPerfis);
 
 window.addEventListener("resize", () => {
     atualizarCarrossel();
@@ -488,4 +506,3 @@ ScrollReveal().reveal('.titulofooter', {
     duration: 1000,
     opacity: 0
 });
-
