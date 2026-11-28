@@ -1366,7 +1366,8 @@ align-items: center;
 }
 
 body:not(.modo-noite) .logoiperene2 img {
-    width: 20vw;
+    width: 26vw;
+    max-width: none;
 }
 
 .containerfootercima a {
@@ -1723,6 +1724,11 @@ header {
 
 .containerperfis {
     width: calc(100vw - 130px);
+}
+
+body:not(.modo-noite) .logoiperene2 img {
+    width: 20vw;
+    max-width: 100%;
 }
 
 .retangulofooter1 p,
